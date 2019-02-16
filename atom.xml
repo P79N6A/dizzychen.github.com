@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dizzy&#39;s blog</title>
+  
+  <subtitle>陈老师的博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://dizzychen.com/"/>
+  <updated>2019-02-13T03:43:57.441Z</updated>
+  <id>http://dizzychen.com/</id>
+  
+  <author>
+    <name>dizzy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>不要轻易的否定自己，也不要过高的估计自己。</title>
+    <link href="http://dizzychen.com/2019/02/12/%E4%B8%8D%E8%A6%81%E8%BD%BB%E6%98%93%E7%9A%84%E5%90%A6%E5%AE%9A%E8%87%AA%E5%B7%B1%EF%BC%8C%E4%B9%9F%E4%B8%8D%E8%A6%81%E8%BF%87%E9%AB%98%E7%9A%84%E4%BC%B0%E8%AE%A1%E8%87%AA%E5%B7%B1%E3%80%82-1/"/>
+    <id>http://dizzychen.com/2019/02/12/不要轻易的否定自己，也不要过高的估计自己。-1/</id>
+    <published>2019-02-12T14:43:00.000Z</published>
+    <updated>2019-02-13T03:43:57.441Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;因资金短缺，马化腾曾经找到张朝阳，想以50万的价格卖掉QQ。而张朝阳不仅果断的拒绝了小马，还抛出了那句经典台词：你这东西我找几个大学生不超过3个月做的比你还好，根本就不值50万。后来腾讯市值超过3000亿美元。当年马云找上门来求马化腾投资阿里巴巴，但当时马化腾不懂也不太看好
+        
+      
+    
+    </summary>
+    
+      <category term="随记" scheme="http://dizzychen.com/categories/%E9%9A%8F%E8%AE%B0/"/>
+    
+    
+      <category term="杂想集" scheme="http://dizzychen.com/tags/%E6%9D%82%E6%83%B3%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>产品中的二八定律</title>
+    <link href="http://dizzychen.com/2019/02/12/%E4%BA%A7%E5%93%81%E4%B8%AD%E7%9A%84%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B-2/"/>
+    <id>http://dizzychen.com/2019/02/12/产品中的二八定律-2/</id>
+    <published>2019-02-12T14:40:00.000Z</published>
+    <updated>2019-02-13T03:41:29.882Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;很多产品，往往都是20%的重点用户给该产品带来80%的价值。&lt;br&gt;找出20％的重点用户是关键。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="产品设计" scheme="http://dizzychen.com/categories/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="产品" scheme="http://dizzychen.com/tags/%E4%BA%A7%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂记三</title>
+    <link href="http://dizzychen.com/2019/02/11/%E6%9D%82%E8%AE%B0%E4%B8%89-1/"/>
+    <id>http://dizzychen.com/2019/02/11/杂记三-1/</id>
+    <published>2019-02-12T01:35:00.000Z</published>
+    <updated>2019-02-13T03:36:12.697Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;凡事有交代，件件有着落，事事有回音。&quot;&gt;&lt;a href=&quot;#凡事有交代，件件有着落，事事有回音。&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="管理心得" scheme="http://dizzychen.com/categories/%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
+    
+    
+      <category term="技术管理" scheme="http://dizzychen.com/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂记二</title>
+    <link href="http://dizzychen.com/2019/01/22/%E6%9D%82%E8%AE%B0%E4%BA%8C-2/"/>
+    <id>http://dizzychen.com/2019/01/22/杂记二-2/</id>
+    <published>2019-01-23T04:24:00.000Z</published>
+    <updated>2019-01-24T06:27:53.306Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;“这事我负责!” =领导&lt;br&gt;“这事我搞定!” = 顶梁柱&lt;br&gt;“这事我来做!” = 领导左右手&lt;br&gt;“这事我不会。” = 最基层员工&lt;br&gt;“这事找谁啊?” = 团队的白痴&lt;br&gt;“这事不怪我。” = 团队的渣渣&lt;br&gt;“这事没人教我。” =
+        
+      
+    
+    </summary>
+    
+      <category term="随记" scheme="http://dizzychen.com/categories/%E9%9A%8F%E8%AE%B0/"/>
+    
+    
+      <category term="杂记" scheme="http://dizzychen.com/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杂记一</title>
+    <link href="http://dizzychen.com/2019/01/22/%E6%9D%82%E6%83%B3%E4%B8%80-1/"/>
+    <id>http://dizzychen.com/2019/01/22/杂想一-1/</id>
+    <published>2019-01-22T23:06:00.000Z</published>
+    <updated>2019-01-24T06:28:30.539Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;选择比勤奋更重要，做正确的事比正确地做事更重要。&lt;br&gt;创业公司最大的成本是决策成本，或者说因为决策不当，而造成的时间成本或机会成本。&lt;br&gt;所谓战略，就是为什么要做这件事情。所谓战术，就是怎么去做这件事情。&lt;br&gt;很多时候，懒惰于战略而勤于战术，其实是一个格局问题。&lt;br
+        
+      
+    
+    </summary>
+    
+      <category term="随记" scheme="http://dizzychen.com/categories/%E9%9A%8F%E8%AE%B0/"/>
+    
+    
+      <category term="杂想集" scheme="http://dizzychen.com/tags/%E6%9D%82%E6%83%B3%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于创业</title>
+    <link href="http://dizzychen.com/2019/01/22/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A/"/>
+    <id>http://dizzychen.com/2019/01/22/关于创业/</id>
+    <published>2019-01-22T19:24:00.000Z</published>
+    <updated>2019-01-23T08:31:03.105Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我们常常存在幸存者偏差，忘记了通往顶峰的路上，堆满了白骨。&lt;br&gt;所有命运的馈赠，都要付出沉重的代价。&lt;/p&gt;
+&lt;p&gt;经济下滑，创业维艰。但创新不死。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂想集" scheme="http://dizzychen.com/tags/%E6%9D%82%E6%83%B3%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>成功团队的五个关键特征</title>
+    <link href="http://dizzychen.com/2019/01/22/%E6%88%90%E5%8A%9F%E5%9B%A2%E9%98%9F%E7%9A%84%E4%BA%94%E4%B8%AA%E5%85%B3%E9%94%AE%E7%89%B9%E5%BE%81/"/>
+    <id>http://dizzychen.com/2019/01/22/成功团队的五个关键特征/</id>
+    <published>2019-01-22T15:21:00.000Z</published>
+    <updated>2019-01-24T06:29:00.342Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;通过谷歌的Re:
+        
+      
+    
+    </summary>
+    
+      <category term="管理心得" scheme="http://dizzychen.com/categories/%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
+    
+    
+      <category term="杂记" scheme="http://dizzychen.com/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何调动软件工程师的积极性？</title>
+    <link href="http://dizzychen.com/2019/01/22/est/"/>
+    <id>http://dizzychen.com/2019/01/22/est/</id>
+    <published>2019-01-22T05:18:00.000Z</published>
+    <updated>2019-01-24T06:29:14.796Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;软件工程师都是一群聪明的人，他们精力充沛，有上进心。但他们也有一些不好的地方——比如拖延症——而由此可能会引发一些不好的后果，比如加班熬夜，这会导致软件工程师精神疲惫，士气低落。这种精神状态又会使软件工程师产生新的拖延。如此这般恶性循环下去，软件项目非被拖垮不可。&lt;br&gt;所
+        
+      
+    
+    </summary>
+    
+      <category term="管理心得" scheme="http://dizzychen.com/categories/%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
+    
+    
+      <category term="技术管理" scheme="http://dizzychen.com/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+</feed>
