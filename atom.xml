@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dizzychen.com/"/>
-  <updated>2019-02-16T02:57:46.010Z</updated>
+  <updated>2019-03-01T09:26:49.737Z</updated>
   <id>http://dizzychen.com/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker常用命令</title>
+    <link href="http://dizzychen.com/2019/02/28/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://dizzychen.com/2019/02/28/Docker常用命令/</id>
+    <published>2019-02-28T20:17:00.000Z</published>
+    <updated>2019-03-01T09:26:49.737Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Docker的常用命令：&quot;&gt;&lt;a href=&quot;#Docker的常用命令：&quot; class=&quot;headerlink&quot; title=&quot;Docker的常用命令：&quot;&gt;&lt;/a&gt;Docker的常用命令：&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;搜索镜像：&lt;/strong&gt; docker
+        
+      
+    
+    </summary>
+    
+    
+      <category term="docker" scheme="http://dizzychen.com/tags/docker/"/>
+    
+      <category term="运维技术" scheme="http://dizzychen.com/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正向代理和反向代理的区别</title>
+    <link href="http://dizzychen.com/2019/02/26/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://dizzychen.com/2019/02/26/正向代理和反向代理的区别/</id>
+    <published>2019-02-26T12:05:00.000Z</published>
+    <updated>2019-02-27T01:09:45.287Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;正向代理和反向代理的区别&quot;&gt;&lt;a href=&quot;#正向代理和反向代理的区别&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="网络代理" scheme="http://dizzychen.com/tags/%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86/"/>
+    
+      <category term="网络" scheme="http://dizzychen.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>建设大数据平台，从“治理”数据谈起(转)</title>
+    <link href="http://dizzychen.com/2019/02/25/%E5%BB%BA%E8%AE%BE%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0%EF%BC%8C%E4%BB%8E%E2%80%9C%E6%B2%BB%E7%90%86%E2%80%9D%E6%95%B0%E6%8D%AE%E8%B0%88%E8%B5%B7-%E8%BD%AC/"/>
+    <id>http://dizzychen.com/2019/02/25/建设大数据平台，从“治理”数据谈起-转/</id>
+    <published>2019-02-25T17:42:00.000Z</published>
+    <updated>2019-02-26T06:59:18.422Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文目录：&lt;br&gt;一、大数据时代还需要数据治理吗？&lt;br&gt;二、如何面向用户开展大数据治理？&lt;br&gt;三、面向用户的自服务大数据治理架构&lt;br&gt;四、总结&lt;br&gt;一、大数据时代还需要数据治理吗？&lt;br&gt;数据平台发展过程中随处可见的数据问题&lt;br&gt;大数据不是凭空而来，1981年第一
+        
+      
+    
+    </summary>
+    
+    
+      <category term="大数据平台" scheme="http://dizzychen.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>搬瓦工VPS IP被封处理方法</title>
