@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="常用命令： 按cpu利用率从大到小排列   1234567891011121314  ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort   -nr    ```  2. 查看进程 按内存从大到小排列       ```bash  ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort -k5 -nr    ``` 3. rpcbind服务相关操作">
+<meta name="description" content="常用命令： 按cpu利用率从大到小排列ps -e   -o &amp;quot;%C   : %p : %z : %a&amp;quot;|sort   -nr  查看进程 按内存从大到小排列ps -e   -o &amp;quot;%C   : %p : %z : %a&amp;quot;|sort -k5 -nr    rpcbind服务相关操作    关闭服务：service nfslock stopchkconfig n">
 <meta name="keywords" content="Linux,运维技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常用Linux命令">
 <meta property="og:url" content="http://dizzychen.com/2019/03/05/常用Linux命令/index.html">
 <meta property="og:site_name" content="Dizzy&#39;s blog">
-<meta property="og:description" content="常用命令： 按cpu利用率从大到小排列   1234567891011121314  ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort   -nr    ```  2. 查看进程 按内存从大到小排列       ```bash  ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort -k5 -nr    ``` 3. rpcbind服务相关操作">
+<meta property="og:description" content="常用命令： 按cpu利用率从大到小排列ps -e   -o &amp;quot;%C   : %p : %z : %a&amp;quot;|sort   -nr  查看进程 按内存从大到小排列ps -e   -o &amp;quot;%C   : %p : %z : %a&amp;quot;|sort -k5 -nr    rpcbind服务相关操作    关闭服务：service nfslock stopchkconfig n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-06T09:01:26.855Z">
+<meta property="og:updated_time" content="2019-03-06T09:10:52.482Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用Linux命令">
-<meta name="twitter:description" content="常用命令： 按cpu利用率从大到小排列   1234567891011121314  ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort   -nr    ```  2. 查看进程 按内存从大到小排列       ```bash  ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort -k5 -nr    ``` 3. rpcbind服务相关操作">
+<meta name="twitter:description" content="常用命令： 按cpu利用率从大到小排列ps -e   -o &amp;quot;%C   : %p : %z : %a&amp;quot;|sort   -nr  查看进程 按内存从大到小排列ps -e   -o &amp;quot;%C   : %p : %z : %a&amp;quot;|sort -k5 -nr    rpcbind服务相关操作    关闭服务：service nfslock stopchkconfig n">
 
 
 
@@ -380,14 +380,19 @@
 
       
         <h3 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h3><ol>
-<li><p>按cpu利用率从大到小排列  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  ps -e   -o <span class="string">"%C   : %p : %z : %a"</span>|sort   -nr  </span><br><span class="line">  ```  </span><br><span class="line"></span><br><span class="line">2. 查看进程 按内存从大到小排列   </span><br><span class="line">  </span><br><span class="line">  ```bash</span><br><span class="line">  ps -e   -o <span class="string">"%C   : %p : %z : %a"</span>|sort -k5 -nr  </span><br><span class="line">  ``` </span><br><span class="line">3. rpcbind服务相关操作  </span><br><span class="line">  - 关闭服务：</span><br><span class="line">  </span><br><span class="line">  ```bash</span><br><span class="line">  service nfslock stop    </span><br><span class="line">  chkconfig nfslock off</span><br></pre></td></tr></table></figure>
+<li><p>按cpu利用率从大到小排列<br><code>ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort   -nr</code></p>
+</li>
+<li><p>查看进程 按内存从大到小排列<br><code>ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort -k5 -nr</code>  </p>
+</li>
+<li><p>rpcbind服务相关操作  </p>
+<ul>
+<li><p>关闭服务：<br><code>service nfslock stop</code><br><code>chkconfig nfslock off</code>  </p>
+</li>
+<li><p>停止服务:<br><code>service rpcbind stop</code></p>
+</li>
+</ul>
 </li>
 </ol>
-<ul>
-<li><p>停止服务:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service rpcbind stop</span><br></pre></td></tr></table></figure></li>
-</ul>
 
       
     </div>

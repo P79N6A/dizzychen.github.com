@@ -379,14 +379,19 @@
         
           
             <h3 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h3><ol>
-<li><p>按cpu利用率从大到小排列  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  ps -e   -o <span class="string">"%C   : %p : %z : %a"</span>|sort   -nr  </span><br><span class="line">  ```  </span><br><span class="line"></span><br><span class="line">2. 查看进程 按内存从大到小排列   </span><br><span class="line">  </span><br><span class="line">  ```bash</span><br><span class="line">  ps -e   -o <span class="string">"%C   : %p : %z : %a"</span>|sort -k5 -nr  </span><br><span class="line">  ``` </span><br><span class="line">3. rpcbind服务相关操作  </span><br><span class="line">  - 关闭服务：</span><br><span class="line">  </span><br><span class="line">  ```bash</span><br><span class="line">  service nfslock stop    </span><br><span class="line">  chkconfig nfslock off</span><br></pre></td></tr></table></figure>
+<li><p>按cpu利用率从大到小排列<br><code>ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort   -nr</code></p>
+</li>
+<li><p>查看进程 按内存从大到小排列<br><code>ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort -k5 -nr</code>  </p>
+</li>
+<li><p>rpcbind服务相关操作  </p>
+<ul>
+<li><p>关闭服务：<br><code>service nfslock stop</code><br><code>chkconfig nfslock off</code>  </p>
+</li>
+<li><p>停止服务:<br><code>service rpcbind stop</code></p>
+</li>
+</ul>
 </li>
 </ol>
-<ul>
-<li><p>停止服务:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service rpcbind stop</span><br></pre></td></tr></table></figure></li>
-</ul>
 
           
         

@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[常用Linux命令]]></title>
     <url>%2F2019%2F03%2F05%2F%E5%B8%B8%E7%94%A8Linux%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[常用命令： 按cpu利用率从大到小排列 1234567891011121314 ps -e -o "%C : %p : %z : %a"|sort -nr ``` 2. 查看进程 按内存从大到小排列 ```bash ps -e -o "%C : %p : %z : %a"|sort -k5 -nr ``` 3. rpcbind服务相关操作 - 关闭服务： ```bash service nfslock stop chkconfig nfslock off 停止服务: 1service rpcbind stop]]></content>
+    <content type="text"><![CDATA[常用命令： 按cpu利用率从大到小排列ps -e -o &quot;%C : %p : %z : %a&quot;|sort -nr 查看进程 按内存从大到小排列ps -e -o &quot;%C : %p : %z : %a&quot;|sort -k5 -nr rpcbind服务相关操作 关闭服务：service nfslock stopchkconfig nfslock off 停止服务:service rpcbind stop]]></content>
       <tags>
         <tag>Linux</tag>
         <tag>运维技术</tag>
