@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dizzychen.com/"/>
-  <updated>2019-03-01T09:26:49.737Z</updated>
+  <updated>2019-03-06T09:01:26.855Z</updated>
   <id>http://dizzychen.com/</id>
   
   <author>
@@ -15,6 +15,114 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用Linux命令</title>
+    <link href="http://dizzychen.com/2019/03/05/%E5%B8%B8%E7%94%A8Linux%E5%91%BD%E4%BB%A4/"/>
+    <id>http://dizzychen.com/2019/03/05/常用Linux命令/</id>
+    <published>2019-03-05T19:51:00.000Z</published>
+    <updated>2019-03-06T09:01:26.855Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;常用命令：&quot;&gt;&lt;a href=&quot;#常用命令：&quot; class=&quot;headerlink&quot; title=&quot;常用命令：&quot;&gt;&lt;/a&gt;常用命令：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;按cpu利用率从大到小排列  &lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://dizzychen.com/tags/Linux/"/>
+    
+      <category term="运维技术" scheme="http://dizzychen.com/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7服务相关操作</title>
+    <link href="http://dizzychen.com/2019/03/05/CentOS7%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <id>http://dizzychen.com/2019/03/05/CentOS7服务相关操作/</id>
+    <published>2019-03-05T19:50:00.000Z</published>
+    <updated>2019-03-06T08:50:54.317Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;CentOS7-服务相关操作：&quot;&gt;&lt;a href=&quot;#CentOS7-服务相关操作：&quot; class=&quot;headerlink&quot; title=&quot;CentOS7 服务相关操作：&quot;&gt;&lt;/a&gt;CentOS7
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://dizzychen.com/tags/Linux/"/>
+    
+      <category term="运维技术" scheme="http://dizzychen.com/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux找出是谁占用了带宽</title>
+    <link href="http://dizzychen.com/2019/03/05/%E6%89%BE%E5%87%BA%E6%98%AF%E8%B0%81%E5%8D%A0%E7%94%A8%E4%BA%86%E5%B8%A6%E5%AE%BD/"/>
+    <id>http://dizzychen.com/2019/03/05/找出是谁占用了带宽/</id>
+    <published>2019-03-05T06:40:00.000Z</published>
+    <updated>2019-03-06T08:51:05.299Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;找出是谁占用了带宽&quot;&gt;&lt;a href=&quot;#找出是谁占用了带宽&quot; class=&quot;headerlink&quot; title=&quot;找出是谁占用了带宽&quot;&gt;&lt;/a&gt;找出是谁占用了带宽&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;使用iftop查看带宽流量情况&lt;br&gt;安装iftop   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://dizzychen.com/tags/Linux/"/>
+    
+      <category term="运维技术" scheme="http://dizzychen.com/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客解决不蒜子统计无法显示问题</title>
+    <link href="http://dizzychen.com/2019/03/04/hexo%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E4%B8%8D%E8%92%9C%E5%AD%90%E7%BB%9F%E8%AE%A1%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>http://dizzychen.com/2019/03/04/hexo博客解决不蒜子统计无法显示问题/</id>
+    <published>2019-03-04T20:53:00.000Z</published>
+    <updated>2019-03-05T10:02:00.669Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;hexo博客和NexT主题下不蒜子统计失效，无法显示。主要问题是不蒜子统计的域名过期了，而js的引用就会有问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&quot;解决方法&quot;&gt;&lt;a href=&quot;#解决方法&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://dizzychen.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker常用命令</title>
@@ -36,9 +144,9 @@
     </summary>
     
     
-      <category term="docker" scheme="http://dizzychen.com/tags/docker/"/>
-    
       <category term="运维技术" scheme="http://dizzychen.com/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="docker" scheme="http://dizzychen.com/tags/docker/"/>
     
   </entry>
   
@@ -431,109 +539,6 @@
     
     
       <category term="杂记" scheme="http://dizzychen.com/tags/%E6%9D%82%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杂记一</title>
-    <link href="http://dizzychen.com/2019/01/22/%E6%9D%82%E6%83%B3%E4%B8%80-1/"/>
-    <id>http://dizzychen.com/2019/01/22/杂想一-1/</id>
-    <published>2019-01-22T23:06:00.000Z</published>
-    <updated>2019-01-24T06:28:30.539Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;选择比勤奋更重要，做正确的事比正确地做事更重要。&lt;br&gt;创业公司最大的成本是决策成本，或者说因为决策不当，而造成的时间成本或机会成本。&lt;br&gt;所谓战略，就是为什么要做这件事情。所谓战术，就是怎么去做这件事情。&lt;br&gt;很多时候，懒惰于战略而勤于战术，其实是一个格局问题。&lt;br
-        
-      
-    
-    </summary>
-    
-      <category term="随记" scheme="http://dizzychen.com/categories/%E9%9A%8F%E8%AE%B0/"/>
-    
-    
-      <category term="杂想集" scheme="http://dizzychen.com/tags/%E6%9D%82%E6%83%B3%E9%9B%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于创业</title>
-    <link href="http://dizzychen.com/2019/01/22/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A/"/>
-    <id>http://dizzychen.com/2019/01/22/关于创业/</id>
-    <published>2019-01-22T19:24:00.000Z</published>
-    <updated>2019-01-23T08:31:03.105Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;我们常常存在幸存者偏差，忘记了通往顶峰的路上，堆满了白骨。&lt;br&gt;所有命运的馈赠，都要付出沉重的代价。&lt;/p&gt;
-&lt;p&gt;经济下滑，创业维艰。但创新不死。
-        
-      
-    
-    </summary>
-    
-    
-      <category term="杂想集" scheme="http://dizzychen.com/tags/%E6%9D%82%E6%83%B3%E9%9B%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>成功团队的五个关键特征</title>
-    <link href="http://dizzychen.com/2019/01/22/%E6%88%90%E5%8A%9F%E5%9B%A2%E9%98%9F%E7%9A%84%E4%BA%94%E4%B8%AA%E5%85%B3%E9%94%AE%E7%89%B9%E5%BE%81/"/>
-    <id>http://dizzychen.com/2019/01/22/成功团队的五个关键特征/</id>
-    <published>2019-01-22T15:21:00.000Z</published>
-    <updated>2019-01-24T06:29:00.342Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;通过谷歌的Re:
-        
-      
-    
-    </summary>
-    
-      <category term="管理心得" scheme="http://dizzychen.com/categories/%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
-    
-    
-      <category term="杂记" scheme="http://dizzychen.com/tags/%E6%9D%82%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何调动软件工程师的积极性？</title>
-    <link href="http://dizzychen.com/2019/01/22/est/"/>
-    <id>http://dizzychen.com/2019/01/22/est/</id>
-    <published>2019-01-22T05:18:00.000Z</published>
-    <updated>2019-01-24T06:29:14.796Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;软件工程师都是一群聪明的人，他们精力充沛，有上进心。但他们也有一些不好的地方——比如拖延症——而由此可能会引发一些不好的后果，比如加班熬夜，这会导致软件工程师精神疲惫，士气低落。这种精神状态又会使软件工程师产生新的拖延。如此这般恶性循环下去，软件项目非被拖垮不可。&lt;br&gt;所
-        
-      
-    
-    </summary>
-    
-      <category term="管理心得" scheme="http://dizzychen.com/categories/%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
-    
-    
-      <category term="技术管理" scheme="http://dizzychen.com/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   

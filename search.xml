@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[常用Linux命令]]></title>
+    <url>%2F2019%2F03%2F05%2F%E5%B8%B8%E7%94%A8Linux%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[常用命令： 按cpu利用率从大到小排列 1234567891011121314 ps -e -o "%C : %p : %z : %a"|sort -nr ``` 2. 查看进程 按内存从大到小排列 ```bash ps -e -o "%C : %p : %z : %a"|sort -k5 -nr ``` 3. rpcbind服务相关操作 - 关闭服务： ```bash service nfslock stop chkconfig nfslock off 停止服务: 1service rpcbind stop]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>运维技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CentOS7服务相关操作]]></title>
+    <url>%2F2019%2F03%2F05%2FCentOS7%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[CentOS7 服务相关操作： 步骤1：查看crond.serivce服务的自启动状态[root@localhost ~]# systemctl is-enabled crond.servicedisabled此时crond.serivce的自启动状态为disabled 步骤2：开启crond.serivce服务自启动[root@localhost ~]# systemctl enable crond.service[root@localhost ~]# systemctl is-enabled crond.serviceenabled 关闭服务自启动systemctl disable crond.service 列出所有的启动文件：systemctl list-unit-files 列出所有状态为enable的启动文件systemctl list-unit-files | grep enable]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>运维技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux找出是谁占用了带宽]]></title>
+    <url>%2F2019%2F03%2F05%2F%E6%89%BE%E5%87%BA%E6%98%AF%E8%B0%81%E5%8D%A0%E7%94%A8%E4%BA%86%E5%B8%A6%E5%AE%BD%2F</url>
+    <content type="text"><![CDATA[找出是谁占用了带宽 使用iftop查看带宽流量情况安装iftop 12345678910111213141516 yum install iftop ``` iftop界面说明： 界面上面显示的是类似刻度尺的刻度范围，为显示流量图形的长条作标尺用的。 中间的&lt;= =&gt;这两个左右箭头，表示的是流量的方向。 TX：发送流量 RX：接收流量 TOTAL：总流量 Cumm：运行iftop到目前时间的总流量 peak：流量峰值 rates：分别表示过去 2s 10s 40s 的平均流量 2. 使用nethogs 查看具体是哪个进程在使用带宽 ```shell yum install nethogs]]></content>
+      <tags>
+        <tag>Linux</tag>
+        <tag>运维技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo博客解决不蒜子统计无法显示问题]]></title>
+    <url>%2F2019%2F03%2F04%2Fhexo%E5%8D%9A%E5%AE%A2%E8%A7%A3%E5%86%B3%E4%B8%8D%E8%92%9C%E5%AD%90%E7%BB%9F%E8%AE%A1%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[hexo博客和NexT主题下不蒜子统计失效，无法显示。主要问题是不蒜子统计的域名过期了，而js的引用就会有问题。 解决方法首先需要先找到NexT下引用不蒜子统计的方法。文件路径为/theme/next/layout/_third-party/analytics/busuanzi-counter.swig文件。打开后如图所示。 替换引用即可。替换为”https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;。 预览效果如下：]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Docker常用命令]]></title>
     <url>%2F2019%2F02%2F28%2FDocker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[Docker的常用命令：搜索镜像： docker search centos获取镜像： docker pull registry.cn-hangzhou.aliyuncs.com/1hpc/centos查看镜像： docker images查看镜像id： docker images -q删除镜像： docker rmi image_id删除所有镜像： docker rmi $(docker images -q)创建容器： docker run –name &lt;container_name&gt; centos:7,container_name是自己定义的容器名查看所有容器： docker ps -a查看运行容器： docker ps查看容器id： docker ps -q进入容器： docker exec -it &lt;container_id&gt; bash退出容器： exit删除容器： docker rm &lt;container_id&gt;删除所有容器： docker rm $(docker ps -aq)端口映射： docker run -d -p 8080:80 hub.c.163.com/library/nginx，说明：-d 表示后台运行，-p 8080:80 表示将宿主机的8080端口映射到容器端口80。容器开放的端口在镜像说明里面会有，nginx开放80，mysql开放3306，一般本来他们监听什么端口，容器就开放什么端口。启动/停止/重启容器： docker start/stop/restart &lt;container_id&gt;获取容器/镜像的元数据： docker inspect &lt;container_id&gt;挂载数据卷： docker run -v host/machine/dir :container/path/dir –name volume_test_container centos:7，说明：数据卷的挂载相当于在宿主机的目录与容器目录创建了一个链接，你修改任何一方的内容，另一方的内容也会同步修改。创建数据卷的作用：当容器被删除的时候，容器内的数据也一起被删除。像数据库、媒体资源等文件我们通常都会使用 -v 将容器中的内容链接到宿主机，这样我们重新创建容器的时候再次-v，数据又回来了。启动mysql容器： docker run –name some-mysql -e MYSQL_ROOT_PASSWORD=qwerasdf -d mysql:5.7，默认用户为root，密码qwerasdfmysql容器启动后，其他容器就可以来连接使用了，方法如下：容器连接： docker run –name some-app –link some-mysql:mysql -d application-that-uses-mysql]]></content>
       <tags>
-        <tag>docker</tag>
         <tag>运维技术</tag>
+        <tag>docker</tag>
       </tags>
   </entry>
   <entry>
