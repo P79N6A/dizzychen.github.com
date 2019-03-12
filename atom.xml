@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dizzychen.com/"/>
-  <updated>2019-03-06T09:10:52.482Z</updated>
+  <updated>2019-03-07T03:00:27.745Z</updated>
   <id>http://dizzychen.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>敏捷开发入门教程（转）</title>
+    <link href="http://dizzychen.com/2019/03/05/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%EF%BC%88%E8%BD%AC%EF%BC%89/"/>
+    <id>http://dizzychen.com/2019/03/05/敏捷开发入门教程（转）/</id>
+    <published>2019-03-06T00:47:00.000Z</published>
+    <updated>2019-03-07T03:00:27.745Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;敏捷开发（agile development）是非常流行的软件开发方法。据统计，2018年90%的软件开发采用敏捷开发。&lt;br&gt;但是，到底什么是敏捷开发，能说清的人却不多。本文尝试用简洁易懂的语言，解释敏捷开发。&lt;br&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>常用Linux命令</title>
     <link href="http://dizzychen.com/2019/03/05/%E5%B8%B8%E7%94%A8Linux%E5%91%BD%E4%BB%A4/"/>
     <id>http://dizzychen.com/2019/03/05/常用Linux命令/</id>
     <published>2019-03-05T19:51:00.000Z</published>
-    <updated>2019-03-06T09:10:52.482Z</updated>
+    <updated>2019-03-06T09:13:03.557Z</updated>
     
     <summary type="html">
     
@@ -128,7 +150,7 @@
     <link href="http://dizzychen.com/2019/02/28/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://dizzychen.com/2019/02/28/Docker常用命令/</id>
     <published>2019-02-28T20:17:00.000Z</published>
-    <updated>2019-03-01T09:26:49.737Z</updated>
+    <updated>2019-03-12T08:14:21.827Z</updated>
     
     <summary type="html">
     
@@ -307,6 +329,30 @@
   </entry>
   
   <entry>
+    <title>什么是好的产品？</title>
+    <link href="http://dizzychen.com/2019/02/12/%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%EF%BC%9F/"/>
+    <id>http://dizzychen.com/2019/02/12/什么是好的产品？/</id>
+    <published>2019-02-12T14:57:00.000Z</published>
+    <updated>2019-02-13T03:57:45.794Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;什么是好的产品？&quot;&gt;&lt;a href=&quot;#什么是好的产品？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="产品" scheme="http://dizzychen.com/tags/%E4%BA%A7%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
     <title>程序员八荣八耻</title>
     <link href="http://dizzychen.com/2019/02/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%85%AB%E8%8D%A3%E5%85%AB%E8%80%BB/"/>
     <id>http://dizzychen.com/2019/02/12/程序员八荣八耻/</id>
@@ -332,30 +378,6 @@
     
     
       <category term="技术管理" scheme="http://dizzychen.com/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>什么是好的产品？</title>
-    <link href="http://dizzychen.com/2019/02/12/%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%EF%BC%9F/"/>
-    <id>http://dizzychen.com/2019/02/12/什么是好的产品？/</id>
-    <published>2019-02-12T14:57:00.000Z</published>
-    <updated>2019-02-13T03:57:45.794Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;什么是好的产品？&quot;&gt;&lt;a href=&quot;#什么是好的产品？&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="产品" scheme="http://dizzychen.com/tags/%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
@@ -512,32 +534,6 @@
     
     
       <category term="技术管理" scheme="http://dizzychen.com/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杂记二</title>
-    <link href="http://dizzychen.com/2019/01/22/%E6%9D%82%E8%AE%B0%E4%BA%8C-2/"/>
-    <id>http://dizzychen.com/2019/01/22/杂记二-2/</id>
-    <published>2019-01-23T04:24:00.000Z</published>
-    <updated>2019-01-24T06:27:53.306Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;“这事我负责!” =领导&lt;br&gt;“这事我搞定!” = 顶梁柱&lt;br&gt;“这事我来做!” = 领导左右手&lt;br&gt;“这事我不会。” = 最基层员工&lt;br&gt;“这事找谁啊?” = 团队的白痴&lt;br&gt;“这事不怪我。” = 团队的渣渣&lt;br&gt;“这事没人教我。” =
-        
-      
-    
-    </summary>
-    
-      <category term="随记" scheme="http://dizzychen.com/categories/%E9%9A%8F%E8%AE%B0/"/>
-    
-    
-      <category term="杂记" scheme="http://dizzychen.com/tags/%E6%9D%82%E8%AE%B0/"/>
     
   </entry>
   

@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Dizzy&#39;s blog">
 <meta property="og:description" content="Docker的常用命令：搜索镜像： docker search centos获取镜像： docker pull registry.cn-hangzhou.aliyuncs.com/1hpc/centos查看镜像： docker images查看镜像id： docker images -q删除镜像： docker rmi image_id删除所有镜像： docker rmi $(docker ima">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-01T09:26:49.737Z">
+<meta property="og:updated_time" content="2019-03-12T08:14:21.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker常用命令">
 <meta name="twitter:description" content="Docker的常用命令：搜索镜像： docker search centos获取镜像： docker pull registry.cn-hangzhou.aliyuncs.com/1hpc/centos查看镜像： docker images查看镜像id： docker images -q删除镜像： docker rmi image_id删除所有镜像： docker rmi $(docker ima">
@@ -379,7 +379,7 @@
       
 
       
-        <h3 id="Docker的常用命令："><a href="#Docker的常用命令：" class="headerlink" title="Docker的常用命令："></a>Docker的常用命令：</h3><p><strong>搜索镜像：</strong> docker search centos<br><strong>获取镜像：</strong> docker pull registry.cn-hangzhou.aliyuncs.com/1hpc/centos<br><strong>查看镜像：</strong> docker images<br><strong>查看镜像id：</strong> docker images -q<br><strong>删除镜像：</strong> docker rmi image_id<br><strong>删除所有镜像：</strong> docker rmi $(docker images -q)<br><strong>创建容器：</strong> docker run –name &lt;container_name&gt; centos:7,container_name是自己定义的容器名<br><strong>查看所有容器：</strong> docker ps -a<br><strong>查看运行容器：</strong> docker ps<br><strong>查看容器id：</strong> docker ps -q<br><strong>进入容器：</strong> docker exec -it &lt;container_id&gt; bash<br><strong>退出容器：</strong> exit<br><strong>删除容器：</strong> docker rm &lt;container_id&gt;<br><strong>删除所有容器：</strong> docker rm $(docker ps -aq)<br><strong>端口映射：</strong> docker run -d -p 8080:80 hub.c.163.com/library/nginx，说明：-d 表示后台运行，-p 8080:80 表示将宿主机的8080端口映射到容器端口80。容器开放的端口在镜像说明里面会有，nginx开放80，mysql开放3306，一般本来他们监听什么端口，容器就开放什么端口。<br><strong>启动/停止/重启容器：</strong> docker start/stop/restart &lt;container_id&gt;<br><strong>获取容器/镜像的元数据：</strong> docker inspect &lt;container_id&gt;<br><strong>挂载数据卷：</strong> docker run -v host/machine/dir :container/path/dir –name volume_test_container centos:7，说明：数据卷的挂载相当于在宿主机的目录与容器目录创建了一个链接，你修改任何一方的内容，另一方的内容也会同步修改。创建数据卷的作用：当容器被删除的时候，容器内的数据也一起被删除。像数据库、媒体资源等文件我们通常都会使用 -v 将容器中的内容链接到宿主机，这样我们重新创建容器的时候再次-v，数据又回来了。<br><strong>启动mysql容器：</strong> docker run –name some-mysql -e MYSQL_ROOT_PASSWORD=qwerasdf -d mysql:5.7，默认用户为root，密码qwerasdf<br>mysql容器启动后，其他容器就可以来连接使用了，方法如下：<br><strong>容器连接：</strong> docker run –name some-app –link some-mysql:mysql -d application-that-uses-mysql  </p>
+        <h3 id="Docker的常用命令："><a href="#Docker的常用命令：" class="headerlink" title="Docker的常用命令："></a>Docker的常用命令：</h3><p><strong>搜索镜像：</strong> docker search centos<br><strong>获取镜像：</strong> docker pull registry.cn-hangzhou.aliyuncs.com/1hpc/centos<br><strong>查看镜像：</strong> docker images<br><strong>查看镜像id：</strong> docker images -q<br><strong>删除镜像：</strong> docker rmi image_id<br><strong>删除所有镜像：</strong> docker rmi $(docker images -q)<br><strong>创建容器：</strong> docker run –name &lt;container_name&gt; centos:7,container_name是自己定义的容器名<br><strong>查看所有容器：</strong> docker ps -a<br><strong>查看运行容器：</strong> docker ps<br><strong>查看容器id：</strong> docker ps -q<br><strong>进入容器：</strong> docker exec -it &lt;container_id&gt; bash  (用指定用户登录：–user root，如：docker exec -it –user root &lt;container_id&gt; bash)<br><strong>退出容器：</strong> exit<br><strong>删除容器：</strong> docker rm &lt;container_id&gt;<br><strong>删除所有容器：</strong> docker rm $(docker ps -aq)<br><strong>端口映射：</strong> docker run -d -p 8080:80 hub.c.163.com/library/nginx，说明：-d 表示后台运行，-p 8080:80 表示将宿主机的8080端口映射到容器端口80。容器开放的端口在镜像说明里面会有，nginx开放80，mysql开放3306，一般本来他们监听什么端口，容器就开放什么端口。<br><strong>启动/停止/重启容器：</strong> docker start/stop/restart &lt;container_id&gt;<br><strong>获取容器/镜像的元数据：</strong> docker inspect &lt;container_id&gt;<br><strong>挂载数据卷：</strong> docker run -v host/machine/dir :container/path/dir –name volume_test_container centos:7，说明：数据卷的挂载相当于在宿主机的目录与容器目录创建了一个链接，你修改任何一方的内容，另一方的内容也会同步修改。创建数据卷的作用：当容器被删除的时候，容器内的数据也一起被删除。像数据库、媒体资源等文件我们通常都会使用 -v 将容器中的内容链接到宿主机，这样我们重新创建容器的时候再次-v，数据又回来了。<br><strong>启动mysql容器：</strong> docker run –name some-mysql -e MYSQL_ROOT_PASSWORD=qwerasdf -d mysql:5.7，默认用户为root，密码qwerasdf<br>mysql容器启动后，其他容器就可以来连接使用了，方法如下：<br><strong>容器连接：</strong> docker run –name some-app –link some-mysql:mysql -d application-that-uses-mysql</p>
 
       
     </div>
@@ -501,7 +501,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

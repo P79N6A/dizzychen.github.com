@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[敏捷开发入门教程（转）]]></title>
+    <url>%2F2019%2F03%2F05%2F%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%EF%BC%88%E8%BD%AC%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[敏捷开发（agile development）是非常流行的软件开发方法。据统计，2018年90%的软件开发采用敏捷开发。但是，到底什么是敏捷开发，能说清的人却不多。本文尝试用简洁易懂的语言，解释敏捷开发。 一、迭代开发敏捷开发的核心是迭代开发（iterative development）。敏捷一定是采用迭代开发的方式。 那么什么是”迭代开发”呢？迭代的英文是 iterative，直译为”重复”，迭代开发其实就是”重复开发”。 对于大型软件项目，传统的开发方式是采用一个大周期（比如一年）进行开发，整个过程就是一次”大开发”；迭代开发的方式则不一样，它将开发过程拆分成多个小周期，即一次”大开发”变成多次”小开发”，每次小开发都是同样的流程，所以看上去就好像重复在做同样的步骤。 举例来说，SpaceX 公司想造一个大推力火箭，将人类送到火星。但是，它不是一开始就造大火箭，而是先造一个最简陋的小火箭 Falcon 1。结果，第一次发射就爆炸了，直到第四次发射，才成功进入轨道。然后，开发了中型火箭 Falcon 9，九年中发射了70次。最后，才开发 Falcon 重型火箭。如果 SpaceX 不采用迭代开发，它可能直到现在还无法上天。 迭代开发将一个大任务，分解成多次连续的开发，本质就是逐步改进。开发者先快速发布一个有效但不完美的最简版本，然后不断迭代。每一次迭代都包含规划、设计、编码、测试、评估五个步骤，不断改进产品，添加新功能。通过频繁的发布，以及跟踪对前一次迭代的反馈，最终接近较完善的产品形态。 二、增量开发迭代开发只是要求将开发分成多个迭代，并没有回答一个重要的问题：怎么划分迭代，哪个任务在这个迭代，哪个任务在下个迭代？这时，一般采用”增量开发”（incremental development）划分迭代。 所谓”增量开发”，指的是软件的每个版本，都会新增一个用户可以感知的完整功能。也就是说，按照新增功能来划分迭代。 举例来说，房产公司开发一个10栋楼的小区。如果采用增量开发的模式，该公司第一个迭代就是交付一号楼，第二个迭代交付二号楼……每个迭代都是完成一栋完整的楼。而不是第一个迭代挖好10栋楼的地基，第二个迭代建好每栋楼的骨架，第三个迭代架设屋顶…… 增量开发加上迭代开发，才算真正的敏捷开发。 三、敏捷开发的好处3.1 早期交付敏捷开发的第一个好处，就是早期交付，从而大大降低成本。 还是以上一节的房产公司为例，如果按照传统的”瀑布开发模式”，先挖10栋楼的地基、再盖骨架、然后架设屋顶，每个阶段都等到前一个阶段完成后开始，可能需要两年才能一次性交付10栋楼。也就是说，如果不考虑预售，该项目必须等到两年后才能回款。 敏捷开发是六个月后交付一号楼，后面每两个月交付一栋楼。因此，半年就能回款10%，后面每个月都会有现金流，资金压力就大大减轻了。 3.2 降低风险敏捷开发的第二个好处是，及时了解市场需求，降低产品不适用的风险。 请想一想，哪一种情况损失比较小：10栋楼都造好以后，才发现卖不出去，还是造好第一栋楼，就发现卖不出去，从而改进或停建后面9栋楼？ 对于软件项目来说，先有一个原型产品，了解市场的接受程度，往往是项目成功的关键。有一本书叫做《梦断代码》，副标题就是”20+个程序员，三年时间，4732个bug，100+万美元，最后失败的故事”，这就是没有采用敏捷开发的结果。相反的，Instagram 最初是一个地理位置打卡 App，后来发现用户不怎么在乎地理位置，更喜欢上传照片，就改做照片上传软件，结果成了独角兽。 由于敏捷开发可以不断试错，找出对业务最重要的功能，然后通过迭代，调整软件方向。相比传统方式，大大增加了产品成功的可能性。如果市场需求不确定，或者你对该领域不熟悉，那么敏捷开发几乎是唯一可行的应对方式。 四、如何进行每一次迭代虽然敏捷开发将软件开发分成多个迭代，但是也要求，每次迭代都是一个完整的软件开发周期，必须按照软件工程的方法论，进行正规的流程管理。 具体来说，每次迭代都必须依次完成以下五个步骤。 需求分析（requirements analysis）设计（design）编码（coding）测试（testing）部署和评估（deployment / evaluation） 每个迭代大约持续2~6周。（dizzy：如果管理得当可以缩短到1周） 五、敏捷开发的价值观《敏捷软件开发宣言》里面提到四个价值观。 程序员的主观能动性，以及程序员之间的互动，优于既定流程和工具。 软件能够运行，优于详尽的文档。 跟客户的密切协作，优于合同和谈判。 能够响应变化，优于遵循计划。 六、十二条原则该宣言还提出十二条敏捷开发的原则。 通过早期和持续交付有价值的软件，实现客户满意度。 欢迎不断变化的需求，即使是在项目开发的后期。要善于利用需求变更，帮助客户获得竞争优势。 不断交付可用的软件，周期通常是几周，越短越好。 项目过程中，业务人员与开发人员必须在一起工作。 项目必须围绕那些有内容动力的个人而建立，他们应该受到信任。 面对面交谈是最好的沟通方式。 可用性是衡量进度的主要指标。 提倡可持续的开发，保持稳定的进展速度。 不断关注技术是否优秀，设计是否良好。 简单性至关重要，尽最大可能减少不必要的工作。 最好的架构、要求和设计，来自团队内部自发的认识。 团队要定期反思如何更有效，并相应地进行调整。 转：http://www.ruanyifeng.com/blog/2019/03/agile-development.html]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[常用Linux命令]]></title>
     <url>%2F2019%2F03%2F05%2F%E5%B8%B8%E7%94%A8Linux%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[常用命令： 按cpu利用率从大到小排列ps -e -o &quot;%C : %p : %z : %a&quot;|sort -nr 查看进程 按内存从大到小排列ps -e -o &quot;%C : %p : %z : %a&quot;|sort -k5 -nr rpcbind服务相关操作 关闭服务：service nfslock stopchkconfig nfslock off 停止服务:service rpcbind stop]]></content>
@@ -38,7 +43,7 @@
   <entry>
     <title><![CDATA[Docker常用命令]]></title>
     <url>%2F2019%2F02%2F28%2FDocker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[Docker的常用命令：搜索镜像： docker search centos获取镜像： docker pull registry.cn-hangzhou.aliyuncs.com/1hpc/centos查看镜像： docker images查看镜像id： docker images -q删除镜像： docker rmi image_id删除所有镜像： docker rmi $(docker images -q)创建容器： docker run –name &lt;container_name&gt; centos:7,container_name是自己定义的容器名查看所有容器： docker ps -a查看运行容器： docker ps查看容器id： docker ps -q进入容器： docker exec -it &lt;container_id&gt; bash退出容器： exit删除容器： docker rm &lt;container_id&gt;删除所有容器： docker rm $(docker ps -aq)端口映射： docker run -d -p 8080:80 hub.c.163.com/library/nginx，说明：-d 表示后台运行，-p 8080:80 表示将宿主机的8080端口映射到容器端口80。容器开放的端口在镜像说明里面会有，nginx开放80，mysql开放3306，一般本来他们监听什么端口，容器就开放什么端口。启动/停止/重启容器： docker start/stop/restart &lt;container_id&gt;获取容器/镜像的元数据： docker inspect &lt;container_id&gt;挂载数据卷： docker run -v host/machine/dir :container/path/dir –name volume_test_container centos:7，说明：数据卷的挂载相当于在宿主机的目录与容器目录创建了一个链接，你修改任何一方的内容，另一方的内容也会同步修改。创建数据卷的作用：当容器被删除的时候，容器内的数据也一起被删除。像数据库、媒体资源等文件我们通常都会使用 -v 将容器中的内容链接到宿主机，这样我们重新创建容器的时候再次-v，数据又回来了。启动mysql容器： docker run –name some-mysql -e MYSQL_ROOT_PASSWORD=qwerasdf -d mysql:5.7，默认用户为root，密码qwerasdfmysql容器启动后，其他容器就可以来连接使用了，方法如下：容器连接： docker run –name some-app –link some-mysql:mysql -d application-that-uses-mysql]]></content>
+    <content type="text"><![CDATA[Docker的常用命令：搜索镜像： docker search centos获取镜像： docker pull registry.cn-hangzhou.aliyuncs.com/1hpc/centos查看镜像： docker images查看镜像id： docker images -q删除镜像： docker rmi image_id删除所有镜像： docker rmi $(docker images -q)创建容器： docker run –name &lt;container_name&gt; centos:7,container_name是自己定义的容器名查看所有容器： docker ps -a查看运行容器： docker ps查看容器id： docker ps -q进入容器： docker exec -it &lt;container_id&gt; bash (用指定用户登录：–user root，如：docker exec -it –user root &lt;container_id&gt; bash)退出容器： exit删除容器： docker rm &lt;container_id&gt;删除所有容器： docker rm $(docker ps -aq)端口映射： docker run -d -p 8080:80 hub.c.163.com/library/nginx，说明：-d 表示后台运行，-p 8080:80 表示将宿主机的8080端口映射到容器端口80。容器开放的端口在镜像说明里面会有，nginx开放80，mysql开放3306，一般本来他们监听什么端口，容器就开放什么端口。启动/停止/重启容器： docker start/stop/restart &lt;container_id&gt;获取容器/镜像的元数据： docker inspect &lt;container_id&gt;挂载数据卷： docker run -v host/machine/dir :container/path/dir –name volume_test_container centos:7，说明：数据卷的挂载相当于在宿主机的目录与容器目录创建了一个链接，你修改任何一方的内容，另一方的内容也会同步修改。创建数据卷的作用：当容器被删除的时候，容器内的数据也一起被删除。像数据库、媒体资源等文件我们通常都会使用 -v 将容器中的内容链接到宿主机，这样我们重新创建容器的时候再次-v，数据又回来了。启动mysql容器： docker run –name some-mysql -e MYSQL_ROOT_PASSWORD=qwerasdf -d mysql:5.7，默认用户为root，密码qwerasdfmysql容器启动后，其他容器就可以来连接使用了，方法如下：容器连接： docker run –name some-app –link some-mysql:mysql -d application-that-uses-mysql]]></content>
       <tags>
         <tag>运维技术</tag>
         <tag>docker</tag>
@@ -97,19 +102,19 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[程序员八荣八耻]]></title>
-    <url>%2F2019%2F02%2F12%2F%E7%A8%8B%E5%BA%8F%E5%91%98%E5%85%AB%E8%8D%A3%E5%85%AB%E8%80%BB%2F</url>
-    <content type="text"><![CDATA[程序员八荣八耻： 以动手实践为荣 , 以只看不练为耻; 以打印日志为荣 , 以单步跟踪为耻; 以空格缩进为荣 , 以制表缩进为耻; 以单元测试为荣 , 以人工测试为耻; 以模块复用为荣 , 以复制粘贴为耻; 以多态应用为荣 , 以分支判断为耻; 以Pythonic为荣 , 以冗余拖沓为耻; 以总结分享为荣 , 以跪求其解为耻。]]></content>
-      <tags>
-        <tag>技术管理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[什么是好的产品？]]></title>
     <url>%2F2019%2F02%2F12%2F%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%EF%BC%9F%2F</url>
     <content type="text"><![CDATA[什么是好的产品？ 好的产品富有创意，必须是一个创新的东西； 好的产品是有用的； 好的产品是美的； 好的产品是容易使用的； 好的产品是很含蓄不招摇的； 好的产品是诚实的； 好的产品经久不衰，不会随着时间而过时； 好的产品不会放过任何细节； 好的产品是环保的，不浪费任何资源的； 好的产品拥有尽可能少的设计，或者说少即是多。]]></content>
       <tags>
         <tag>产品</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[程序员八荣八耻]]></title>
+    <url>%2F2019%2F02%2F12%2F%E7%A8%8B%E5%BA%8F%E5%91%98%E5%85%AB%E8%8D%A3%E5%85%AB%E8%80%BB%2F</url>
+    <content type="text"><![CDATA[程序员八荣八耻： 以动手实践为荣 , 以只看不练为耻; 以打印日志为荣 , 以单步跟踪为耻; 以空格缩进为荣 , 以制表缩进为耻; 以单元测试为荣 , 以人工测试为耻; 以模块复用为荣 , 以复制粘贴为耻; 以多态应用为荣 , 以分支判断为耻; 以Pythonic为荣 , 以冗余拖沓为耻; 以总结分享为荣 , 以跪求其解为耻。]]></content>
+      <tags>
+        <tag>技术管理</tag>
       </tags>
   </entry>
   <entry>
