@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dizzychen.com/"/>
-  <updated>2019-03-07T03:00:27.745Z</updated>
+  <updated>2019-03-25T02:30:42.899Z</updated>
   <id>http://dizzychen.com/</id>
   
   <author>
@@ -15,6 +15,152 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux删除n天前文件</title>
+    <link href="http://dizzychen.com/2019/03/24/%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4n%E5%A4%A9%E5%89%8D%E6%96%87%E4%BB%B6/"/>
+    <id>http://dizzychen.com/2019/03/24/自动删除n天前文件/</id>
+    <published>2019-03-24T14:27:00.000Z</published>
+    <updated>2019-03-25T02:30:42.899Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;删除文件命令：&lt;/strong&gt;&lt;br&gt;find 对应目录 -mtime +天数 -name “文件名” -exec rm -rf {} \;&lt;/p&gt;
+&lt;p&gt;实例命令：&lt;br&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="运维技术" scheme="http://dizzychen.com/categories/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="linux" scheme="http://dizzychen.com/tags/linux/"/>
+    
+      <category term="文件操作" scheme="http://dizzychen.com/tags/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7使用yum安装MySQL5.6</title>
+    <link href="http://dizzychen.com/2019/03/20/Centos7%E4%BD%BF%E7%94%A8yum%E5%AE%89%E8%A3%85MySQL5-6/"/>
+    <id>http://dizzychen.com/2019/03/20/Centos7使用yum安装MySQL5-6/</id>
+    <published>2019-03-20T15:49:00.000Z</published>
+    <updated>2019-03-21T03:58:31.487Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载rpm包  &lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="运维技术" scheme="http://dizzychen.com/categories/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="运维技术" scheme="http://dizzychen.com/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="linux" scheme="http://dizzychen.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RabbitMQ运维相关</title>
+    <link href="http://dizzychen.com/2019/03/17/RabbitMQ%E8%BF%90%E7%BB%B4%E7%9B%B8%E5%85%B3/"/>
+    <id>http://dizzychen.com/2019/03/17/RabbitMQ运维相关/</id>
+    <published>2019-03-17T18:53:00.000Z</published>
+    <updated>2019-03-18T06:55:51.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;RabbitMQ无法访问Web管理页面&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;问题:&lt;br&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="运维技术" scheme="http://dizzychen.com/categories/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="linux" scheme="http://dizzychen.com/tags/linux/"/>
+    
+      <category term="rabbitmq" scheme="http://dizzychen.com/tags/rabbitmq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS 6.5 升级 PHP 到5.6(转）</title>
+    <link href="http://dizzychen.com/2019/03/17/CentOS-6-5-%E5%8D%87%E7%BA%A7-PHP-%E5%88%B05-6/"/>
+    <id>http://dizzychen.com/2019/03/17/CentOS-6-5-升级-PHP-到5-6/</id>
+    <published>2019-03-17T13:25:36.000Z</published>
+    <updated>2019-03-18T01:53:19.021Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;首先先看下已安装的版本：  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Gitlab问题处理汇总</title>
+    <link href="http://dizzychen.com/2019/03/14/Gitlab%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E6%B1%87%E6%80%BB/"/>
+    <id>http://dizzychen.com/2019/03/14/Gitlab问题处理汇总/</id>
+    <published>2019-03-14T21:26:00.000Z</published>
+    <updated>2019-03-15T09:35:55.251Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;gitlab访问返回403，页面显示Forbidden  &lt;blockquote&gt;
+&lt;p&gt;原因:&lt;br&gt;Gitlab使用rack_attack做了并发访问的限制。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="运维技术" scheme="http://dizzychen.com/tags/%E8%BF%90%E7%BB%B4%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="gitlab" scheme="http://dizzychen.com/tags/gitlab/"/>
+    
+  </entry>
   
   <entry>
     <title>敏捷开发入门教程（转）</title>
@@ -150,7 +296,7 @@
     <link href="http://dizzychen.com/2019/02/28/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://dizzychen.com/2019/02/28/Docker常用命令/</id>
     <published>2019-02-28T20:17:00.000Z</published>
-    <updated>2019-03-12T08:14:21.827Z</updated>
+    <updated>2019-03-12T08:17:01.456Z</updated>
     
     <summary type="html">
     
@@ -403,137 +549,6 @@
     
     
       <category term="产品经理" scheme="http://dizzychen.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于工作</title>
-    <link href="http://dizzychen.com/2019/02/12/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C/"/>
-    <id>http://dizzychen.com/2019/02/12/关于工作/</id>
-    <published>2019-02-12T14:51:00.000Z</published>
-    <updated>2019-02-13T03:52:55.251Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;大家认为成为一个更高级的工程师，拿更多的薪资是因为你的技术吗？大部分都不是，你拿多少钱不在于你技术的高低，而在于你能给公司带来多大的价值。&lt;/p&gt;
-&lt;p&gt;Google 的网站可靠性团队发现，70%
-        
-      
-    
-    </summary>
-    
-    
-      <category term="随记" scheme="http://dizzychen.com/tags/%E9%9A%8F%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于创业</title>
-    <link href="http://dizzychen.com/2019/02/12/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A-2/"/>
-    <id>http://dizzychen.com/2019/02/12/关于创业-2/</id>
-    <published>2019-02-12T14:49:00.000Z</published>
-    <updated>2019-02-13T03:51:35.896Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;我们常常存在幸存者偏差，忘记了通往顶峰的路上，堆满了白骨。&lt;br&gt;所有命运的馈赠，都要付出沉重的代价。&lt;/p&gt;
-&lt;p&gt;经济下滑，创业维艰。但创新不死。
-        
-      
-    
-    </summary>
-    
-      <category term="杂记" scheme="http://dizzychen.com/categories/%E6%9D%82%E8%AE%B0/"/>
-    
-    
-      <category term="创业" scheme="http://dizzychen.com/tags/%E5%88%9B%E4%B8%9A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>不要轻易的否定自己，也不要过高的估计自己。</title>
-    <link href="http://dizzychen.com/2019/02/12/%E4%B8%8D%E8%A6%81%E8%BD%BB%E6%98%93%E7%9A%84%E5%90%A6%E5%AE%9A%E8%87%AA%E5%B7%B1%EF%BC%8C%E4%B9%9F%E4%B8%8D%E8%A6%81%E8%BF%87%E9%AB%98%E7%9A%84%E4%BC%B0%E8%AE%A1%E8%87%AA%E5%B7%B1%E3%80%82-1/"/>
-    <id>http://dizzychen.com/2019/02/12/不要轻易的否定自己，也不要过高的估计自己。-1/</id>
-    <published>2019-02-12T14:43:00.000Z</published>
-    <updated>2019-02-13T03:43:57.441Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;因资金短缺，马化腾曾经找到张朝阳，想以50万的价格卖掉QQ。而张朝阳不仅果断的拒绝了小马，还抛出了那句经典台词：你这东西我找几个大学生不超过3个月做的比你还好，根本就不值50万。后来腾讯市值超过3000亿美元。当年马云找上门来求马化腾投资阿里巴巴，但当时马化腾不懂也不太看好
-        
-      
-    
-    </summary>
-    
-      <category term="随记" scheme="http://dizzychen.com/categories/%E9%9A%8F%E8%AE%B0/"/>
-    
-    
-      <category term="杂想集" scheme="http://dizzychen.com/tags/%E6%9D%82%E6%83%B3%E9%9B%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>产品中的二八定律</title>
-    <link href="http://dizzychen.com/2019/02/12/%E4%BA%A7%E5%93%81%E4%B8%AD%E7%9A%84%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B-2/"/>
-    <id>http://dizzychen.com/2019/02/12/产品中的二八定律-2/</id>
-    <published>2019-02-12T14:40:00.000Z</published>
-    <updated>2019-02-13T03:41:29.882Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;很多产品，往往都是20%的重点用户给该产品带来80%的价值。&lt;br&gt;找出20％的重点用户是关键。&lt;/p&gt;
-
-        
-      
-    
-    </summary>
-    
-      <category term="产品设计" scheme="http://dizzychen.com/categories/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-      <category term="产品" scheme="http://dizzychen.com/tags/%E4%BA%A7%E5%93%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杂记三</title>
-    <link href="http://dizzychen.com/2019/02/11/%E6%9D%82%E8%AE%B0%E4%B8%89-1/"/>
-    <id>http://dizzychen.com/2019/02/11/杂记三-1/</id>
-    <published>2019-02-12T01:35:00.000Z</published>
-    <updated>2019-02-13T03:36:12.697Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;凡事有交代，件件有着落，事事有回音。&quot;&gt;&lt;a href=&quot;#凡事有交代，件件有着落，事事有回音。&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="管理心得" scheme="http://dizzychen.com/categories/%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
-    
-    
-      <category term="技术管理" scheme="http://dizzychen.com/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   

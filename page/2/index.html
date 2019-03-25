@@ -307,6 +307,692 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/28/Docker常用命令/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/28/Docker常用命令/" itemprop="url">Docker常用命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-01T04:17:00+08:00">
+                2019-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Docker的常用命令："><a href="#Docker的常用命令：" class="headerlink" title="Docker的常用命令："></a>Docker的常用命令：</h3><p><strong>搜索镜像：</strong> docker search centos<br><strong>获取镜像：</strong> docker pull registry.cn-hangzhou.aliyuncs.com/1hpc/centos<br><strong>查看镜像：</strong> docker images<br><strong>查看镜像id：</strong> docker images -q<br><strong>删除镜像：</strong> docker rmi image_id<br><strong>删除所有镜像：</strong> docker rmi $(docker images -q)<br><strong>创建容器：</strong> docker run –name &lt;container_name&gt; centos:7,container_name是自己定义的容器名<br><strong>查看所有容器：</strong> docker ps -a<br><strong>查看运行容器：</strong> docker ps<br><strong>查看容器id：</strong> docker ps -q<br><strong>进入容器：</strong> docker exec -it &lt;container_id&gt; bash  (用指定用户登录：–user root，如：docker exec -it –user root &lt;container_id&gt; bash)<br><strong>退出容器：</strong> exit<br><strong>删除容器：</strong> docker rm &lt;container_id&gt;<br><strong>删除所有容器：</strong> docker rm $(docker ps -aq)<br><strong>端口映射：</strong> docker run -d -p 8080:80 hub.c.163.com/library/nginx，说明：-d 表示后台运行，-p 8080:80 表示将宿主机的8080端口映射到容器端口80。容器开放的端口在镜像说明里面会有，nginx开放80，mysql开放3306，一般本来他们监听什么端口，容器就开放什么端口。<br><strong>启动/停止/重启容器：</strong> docker start/stop/restart &lt;container_id&gt;<br><strong>获取容器/镜像的元数据：</strong> docker inspect &lt;container_id&gt;<br><strong>挂载数据卷：</strong> docker run -v host/machine/dir :container/path/dir –name volume_test_container centos:7，说明：数据卷的挂载相当于在宿主机的目录与容器目录创建了一个链接，你修改任何一方的内容，另一方的内容也会同步修改。创建数据卷的作用：当容器被删除的时候，容器内的数据也一起被删除。像数据库、媒体资源等文件我们通常都会使用 -v 将容器中的内容链接到宿主机，这样我们重新创建容器的时候再次-v，数据又回来了。<br><strong>启动mysql容器：</strong> docker run –name some-mysql -e MYSQL_ROOT_PASSWORD=qwerasdf -d mysql:5.7，默认用户为root，密码qwerasdf<br>mysql容器启动后，其他容器就可以来连接使用了，方法如下：<br><strong>容器连接：</strong> docker run –name some-app –link some-mysql:mysql -d application-that-uses-mysql</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/26/正向代理和反向代理的区别/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/26/正向代理和反向代理的区别/" itemprop="url">正向代理和反向代理的区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-26T20:05:00+08:00">
+                2019-02-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="正向代理和反向代理的区别"><a href="#正向代理和反向代理的区别" class="headerlink" title="正向代理和反向代理的区别"></a>正向代理和反向代理的区别</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;虽然正向代理服务器和反向代理服务器所处的位置都是客户端和真实服务器之间，所做的事情也都是把客户端的请求转发给服务器，再把服务器的响应转发给客户端，但是二者之间还是有一定的差异的。  </p>
+<ol>
+<li><p><b>正向代理其实是客户端的代理</b>，帮助客户端访问其无法访问的服务器资源。<b>反向代理则是服务器的代理</b>，帮助服务器做负载均衡，安全防护等。  </p>
+</li>
+<li><p><b>正向代理一般是客户端架设的</b>，比如在自己的机器上安装一个代理软件。而<b>反向代理一般是服务器架设的</b>，比如在自己的机器集群中部署一个反向代理服务器。  </p>
+</li>
+<li><p><b>正向代理中，服务器不知道真正的客户端到底是谁</b>，以为访问自己的就是真实的客户端。而在<b>反向代理中，客户端不知道真正的服务器是谁</b>，以为自己访问的就是真实的服务器。  </p>
+</li>
+<li><p>正向代理和反向代理的作用和目的不同。<b>正向代理主要是用来解决访问限制问题。而反向代理则是提供负载均衡、安全防护等作用。二者均能提高访问速度。</b>  </p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/25/建设大数据平台，从“治理”数据谈起-转/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/25/建设大数据平台，从“治理”数据谈起-转/" itemprop="url">建设大数据平台，从“治理”数据谈起(转)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-26T01:42:00+08:00">
+                2019-02-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>本文目录：<br>一、大数据时代还需要数据治理吗？<br>二、如何面向用户开展大数据治理？<br>三、面向用户的自服务大数据治理架构<br>四、总结<br>一、大数据时代还需要数据治理吗？<br>数据平台发展过程中随处可见的数据问题<br>大数据不是凭空而来，1981年第一个数据仓库诞生，到现在已经有了近40年的历史，相对数据仓库来说我还是个年轻人。而国内企业数据平台的建设大概从90年代末就开始了，从第一代架构出现到现在已经经历了近20年的时间。</p>
+<p><img src="/images/pasted-2.png" alt="upload successful"></p>
+<p>在这20年的时间里，国内数据平台实施者可以说是受尽折磨，数据项目一直不受待见，是出了名的脏活累活。<br><img src="/images/pasted-4.png" alt="upload successful"></p>
+<p>可以说，忽视数据治理给数据平台建设带来了不少问题。随处可见的数据不统一，难以提升的数据质量，难以完成的数据模型梳理等源源不断的基础性数据问题，限制了数据平台发展，导致数据应用不能在商业上快速展示效果。<br>举一个典型商业智能应用的例子，管理驾驶舱可能很多朋友都听说过，很多企业建设了管理驾驶舱，但是建设完之后往往成为摆设，只有当领导需要看的时候，大家才去拼命改数据。<br>为什么数据平台的建设遇到这么多“坎”，而且难以真正发挥其商业价值？其实核心问题还是数据本身不统一，数据内容准确度不高。<br>数据治理逐渐受到各行业认识<br>我国最早意识到数据治理重要性的行业银行是金融行业。由于对数据的强依赖，金融业一直非常重视数据平台的建设，经过几代数据平台的验证，发现数据治理是平台建设的主要限制因素，而且随着投资和建设的投入增加，对数据治理的重要性的认识也越来越深刻。<br>人民银行与银监会也非常重视数据治理，从08年开始，在全国银行业推行统一的数据标准，控制行业的数据质量。工行、建行、国开等大型银行，对数据治理都非常重视。08年前，我们与国开一起开始了数据治理的建设，下图展示的就是国开银行针对数据全生命周期的数据管控。<br><img src="/images/pasted-5.png" alt="upload successful"></p>
+<p>如今各行业都开始了大数据平台的建设，希望利用大数据的能力，来实现数字化转型。大数据平台的建设本质上还是数据的建设，传统数据平台碰到的所有问题大数据平台都有可能碰到，由于数据量级的变化，大数据平台必然还会产生新的问题。<br>大数据时代下需要新一代的数据治理能力<br>目前大数据平台的突出问题主要体现在以下四方面：<br>数据不可知：用户不知道大数据平台中有哪些数据，也不知道这些数据和业务的关系是什么，虽然意识到了大数据的重要性，但平台中有没有能解决自己所面临业务问题的关键数据？该到哪里寻找这些数据？<br>数据不可控：数据不可控是从传统数据平台开始就一直存在的问题，在大数据时代表现得更为明显。没有统一的数据标准导致数据难以集成和统一，没有质量控制导致海量数据因质量过低而难以被利用，没有能有效管理整个大数据平台的管理流程。<br>数据不可取：用户即使知道自己业务所需要的是哪些数据，也不能便捷自助地拿到数据，相反，获取数据需要很长的开发过程，导致业务分析的需求难以被快速满足，而在大数据时代，业务追求的是针对某个业务问题的快速分析，这样漫长的需求响应时间是难以满足业务需求的。<br>数据不可联：大数据时代，企业拥有着海量数据，但企业数据知识之间的关联还比较弱，没有把数据和知识体系关联起来，企业员工难以做到数据与知识之间的快速转换，不能对数据进行自助的的探索和挖掘，数据的深层价值难以体现。</p>
+<p><img src="/images/pasted-6.png" alt="upload successful"></p>
+<p>通过分析以上四类问题，我们发现传统数据平台面临的问题，在大数据时代不仅没有消失，还不断涌现出新的问题，传统的数据治理需要提升能力，来解决大数据平台建设过程中的这些问题。<br>在传统数据平台阶段，数据治理的目标主要是做管控，为数据部门建立一个的治理工作环境，包括标准、质量等。在大数据平台阶段，用户对数据的需求持续增长，用户范围从数据部门扩展到全企业，数据治理不能再只是面向数据部门了，需要成为面向全企业用户的工作环境，需要以全企业用户为中心，从给用户提供服务的角度，管理好数据的同时为用户提供自助获得大数据的能力，帮助企业完成数字化转型。</p>
+<p><img src="/images/pasted-7.png" alt="upload successful"></p>
+<p>二、如何面向用户开展大数据治理？<br>面向用户的大数据治理实践案例<br>很多企业经过一段时间的摸索，已经看到了用户对大数据治理的这种需求，大数据治理也持续在各行业的大数据平台建设中得到关注。</p>
+<p><img src="/images/pasted-8.png" alt="upload successful"></p>
+<p>在我参与过的项目中给大家举个例子。国家电网在大数据平台的建设中就非常重视大数据治理的建设，也取得了很多成绩，普元主导了国家电网在浙江电力公司的数据治理建设试点。<br>我们融合国网数据管理服务平台、浙江公司数据管理平台等国网公司现有的数据管理工具建设成果，以元数据为基础，实现了贯穿数据设计、产生、存储、迁移、使用、归档等环节的数据全生命周期管理，以及数据从源端到数据中心，再到应用端的全过程的管理，做到了以用户为中心，通过大数据治理，为用户提供了更便捷、更灵活、更准确地获得企业大数据资产的能力。</p>
+<p><img src="/images/pasted-9.png" alt="upload successful"></p>
+<p>浙江电力的大数据治理的起点是先以元数据为基础，构建数据资产管理体系。从用户的视角说明白企业数据有哪些，哪些用户能够使用。在浙江电力的数据资产定义过程中，我们选择了贴近业务用户的数据分类方案，梳理和识别企业运营数据资源。</p>
+<p><img src="/images/pasted-10.png" alt="upload successful"></p>
+<p>我们又基于第一步形成的数据分类管理体系框架，梳理、整合各级各类数据资源，建立了数据资产树，按照不同数据细类制定相应的工作模板，对指标数据和明细数据进行梳理和归并。</p>
+<p><img src="/images/pasted-11.png" alt="upload successful"></p>
+<p>所有资产梳理和控制的最终目标都是为了用户能够使用数据，我们通过L0–L1–L2三个层次的定义，以业务驱动为导向提高数据查询的实用性。<br>L0：按照电网业务域–业务主题–业务活动的结构化方法，对查询进行分类导航。<br>L1：依据业务和数据源中数据资源情况，按业务主题对数据进行预处理和定义。<br>L2：将数据库表字段等技术元数据转换为业务人员可以理解的业务元数据。  </p>
+<p><img src="/images/pasted-12.png" alt="upload successful"></p>
+<p>浙江电力的大数据治理，通过梳理数据、管理数据、提供数据、关联业务，形成了一整套以用户为中心的大数据治理能力，最终为用户直接使用数据提供了帮助，从而使数据治理完成了从以管控为中心到以业务为中心的转变。由于受限于篇幅这里不过多描述浙江电力的大数据治理建设。<br>面向用户的大数据治理的四个阶段<br>面向用户的大数据治理该如何做，我们总结了四个阶段。  </p>
+<p><img src="/images/pasted-13.png" alt="upload successful"></p>
+<p>（1）第一阶段：全面梳理企业信息，自动化构建企业的数据资产库<br>在第一阶段，主要是对企业大数据的梳理，从而全面掌握企业大数据的情况，主要有以下三个方面。  </p>
+<p>梳理全企业数据架构，对企业的数据模型、数据关系、数据处理有清晰化的认识。<br>对数据资产形成统一的自动化管理，形成企业的元数据库。<br>对企业数据资产形成多种视图，使数据资产能够让不同用户，有不同视角的展示。</p>
+<p><img src="/images/pasted-14.png" alt="upload successful"></p>
+<p>（2）第二阶段：建立管理流程，落地数据标准，提升数据质量<br>在第二阶段，需要建立大数据管控能力，包括从业务的角度梳理企业数据质量问题，形成质量控制能力，形成核心数据标准，并抓标准落地。针对关键问题，建立数据的管理流程，少而精，控制核心问题。<br>在这个阶段主要是为数据部门形成一套管理大数据的能力，同时为数据部门形成数据管理的工作环境。</p>
+<p><img src="/images/pasted-15.png" alt="upload successful"></p>
+<p>（3）第三阶段：直接为用户提供价值，向用户提供数据微服务<br>通过前两个阶段，企业能够建立基本的数据治理的能力，在此基础上，还需要以用户为中心，为用户提供直接获取数据的能力。第三阶段依赖于前两个阶段能力的建设，在这个阶段的目标是向用户提供自助化的数据服务，使用户能够自助地获取和使用数据，并且在用户的使用过程中再反过去进一步落地标准、控制质量。</p>
+<p><img src="/images/pasted-16.png" alt="upload successful"></p>
+<p>（4）第四阶段：智能化企业知识图谱，为全企业提供数据价值<br>最后一个阶段是将数据沉淀成为知识，形成企业的知识图谱，提供从“关系”的角度去分析问题的能力。<br>人进行数据搜索是通过业务术语（知识）来搜索的，而知识之间是有相互联系的，例如水果和西红柿是上下位关系（后者是前者的具体体现），好的搜索除了要列出直接结果，还需要显示与之关联的知识，这就要建立知识图谱。<br>简单说知识图谱就是概念、属性以及概念之间的关联关系，这个关系可以手工建立，也能通过自然语言处理等方法，对政策、法规、需求、数据库comments、界面等多种来源进行分析，自动化建立起企业知识图谱。从而使数据治理成为整个企业的数据工作环境，强化企业数据与知识体系之间的关联，加快企业员工数据与知识之间的转换效率，让数据的深层价值得以体现。</p>
+<p><img src="/images/pasted-17.png" alt="upload successful"></p>
+<p>通过这四个阶段的建设，使数据治理平台由数据部门的工作环境，转变成为全企业的数据工作环境，以用户为中心，让用户能够直接使用大数据，并通过用户的使用来管理数据，持续优化数据质量，在达到治理数据目标的同时，也最大限度发挥了数据的价值。<br>三、面向用户的自服务大数据治理架构<br>自服务大数据治理架构<br>以用户为中心的自服务大数据治理技术架构包括五部分：数据资产管理、数据监控管理、数据准备平台、数据服务总线，消息与流数据管理。</p>
+<p><img src="/images/pasted-18.png" alt="upload successful"></p>
+<p>整个平台分为五块核心能力：数据资产、数据准备、数据服务总线、消息&amp;流数据管理、数据监控管理。<br>数据资产管理是对企业数据信息统一管理也是整个平台的基础，数据准备平台是资产服务化的加工厂，它不但能将原始数据通过服务形式以用户能看懂的方式提供，也可以通过在线数据模型设计实现最终数据产品的发布，起到承上启下的作用。<br>数据服务总线和消息&amp;流数据管理的价值层次是一致的，只是从数据时效性上面对数据进行了区分，去适应用户不同的管理和应用诉求。起到数据通道和安全管理两个核心内容。<br>数据监控管理有别于大数据中的数据节点管理，而是从数据管理的视角切入对数据的结构的变化、关系的变化进行管理和控制，它是数据持续发挥价值的监管者。<br>自服务大数据治理的关键技术<br>（1）人工智能的知识图谱构建<br>主要有三个步骤<br>a、基于企业元数据信息，通过自然语言处理、机器学习、模式识别等算法，以及业务规则过滤，实现知识提取；<br>b、以本体形式表示和存储知识，自动构建成起资产知识图谱；<br>c、通过知识图谱关系，利用智能搜索、关联查询手段，为最终用户提供更加精确的数据；</p>
+<p><img src="/images/pasted-19.png" alt="upload successful"></p>
+<p>（2）细粒度的敏感信息控制<br>数据内容安全管理包括对IT系统和数据进行敏感度等级划分的定义、浏览、检核，辅助安全规则在业务、技术领域的应用。从功能上包括数据敏感性分级、系统敏感性分级，数据安全策略定义管理，安全策略输出，安全管理报告，数据安全检核，敏感数据角色管理，敏感数据权鉴管理及相关电子审批流程。</p>
+<p><img src="/images/pasted-20.png" alt="upload successful"></p>
+<p>（3）自助化的大数据服务生产线<br>这里有4个关键点：<br>a、自助的查询到想要的数据；<br>b、自动的生成数据服务；<br>c、及时稳定的获得数据通道；<br>d、数据安全有保证;<br>通过自助化的数据生产线，数据使用方（业务人员）大大减少了对开发人员依赖，80%以上的数据需求，都能通过自己进行整合开发，最终获取数据。让所有用数据的人能方便得到想要的数据。</p>
+<p><img src="/images/pasted-21.png" alt="upload successful"></p>
+<p>（4）多维度实时的数据资产信息的展示<br>数据治理平台提供实时、全面的数据监控，不仅能从作业、模型、物理资源等各方面进行全面的数据资产盘点，还能对数据及时性、问题数据量等方面的数据健康环境进行全面的预警。<br>（5）以业务元模型为核心的数据微服务<br>数据需要以服务的形式提供给最终用户，在服务的提供上不能再采用传统的方式，而需要用微服务的方式提供，每个单独数据微服务自己对所提供数据做缓存，在其中利用元数据能力，把知识（业务模型）与技术（数据模型）相结合，从而向最终数据用户提供多种数据能力，使用户能够以多种方式使用数据。</p>
+<p><img src="/images/pasted-22.png" alt="upload successful"></p>
+<p>最后在整个大数据治理平台的构建中还需要满足一系列原则，详情参考我写过的《》。</p>
+<p><img src="/images/pasted-23.png" alt="upload successful"></p>
+<p>四、总结<br>大数据时代，企业急需建立以用户为中心的自服务大数据治理，信息梳理、数据管控、连接用户、智能化是实现自服务大数据治理的四个主要阶段，掌握一系列关键技术和技术原则，是实现自服务大数据治理的重要基础。</p>
+<p><strong><strong>关于作者：</strong></strong><br>王轩 普元软件产品部副总兼大数据产品线总经理<br>中国大数据产业生态联盟专家委员会专家委员、国内数据标准化及治理领域专家、国际数据管理协会（DAMA）会员。有十余年大型企业信息化架构设计与建设经验，全面主持普元大数据产品部的研发、拓展及团队管理工作，曾任中国人民银行核心架构师。主持参与了国家开发银行大数据治理、中国人民银行软件开发平台、国家电网云计算平台等大型项目建设  </p>
+<p>作者：达微<br>链接：<a href="https://www.jianshu.com/p/46eb6e55e598" target="_blank" rel="noopener">https://www.jianshu.com/p/46eb6e55e598</a><br>来源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/15/搬瓦工VPS-IP被封处理方法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/15/搬瓦工VPS-IP被封处理方法/" itemprop="url">搬瓦工VPS IP被封处理方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-15T21:47:00+08:00">
+                2019-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="处理步骤如下"><a href="#处理步骤如下" class="headerlink" title="处理步骤如下:"></a>处理步骤如下:</h4><ol>
+<li><p>检测IP是否被封，官方检测URL：<a href="https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck" target="_blank" rel="noopener">https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck</a> </p>
+<blockquote>
+<p>界面如下：</p>
+</blockquote>
+<p> <img src="/images/pasted-0.png" alt="upload successful"></p>
+</li>
+<li><p>更换新的IP</p>
+<blockquote>
+<p>出现 <strong><em> <font color="#f00">IP BLOCKED</font> </em></strong>，就是被封了，出现 IP NOT BLOCKED，就是没被封。<br>如果被封，这个页面会出现更换IP的操作按钮，直接点击进行更换就好了。</p>
+</blockquote>
+</li>
+<li><p>重启sshd</p>
+</li>
+<li><p>更换域名绑定的IP</p>
+</li>
+<li><p>更换翻墙shadowsocks配置中的IP</p>
+<blockquote>
+<p>vim /etc/shadowsocks.json</p>
+</blockquote>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/13/找出谁占用了带宽/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/13/找出谁占用了带宽/" itemprop="url">找出谁占用了带宽</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-14T01:27:00+08:00">
+                2019-02-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>找出是谁占用了带宽</p>
+<ol>
+<li>使用iftop查看带宽流量情况<br>安装iftop    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install iftop</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>iftop界面说明：</p>
+<p>界面上面显示的是类似刻度尺的刻度范围，为显示流量图形的长条作标尺用的。</p>
+<p>中间的&lt;= =&gt;这两个左右箭头，表示的是流量的方向。</p>
+<p>TX：发送流量<br>RX：接收流量<br>TOTAL：总流量<br>Cumm：运行iftop到目前时间的总流量<br>peak：流量峰值<br>rates：分别表示过去 2s 10s 40s 的平均流量</p>
+<ol start="2">
+<li>使用nethogs 查看具体是哪个进程在使用带宽 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install nethogs</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/敏捷宣言/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -920,710 +1606,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/关于工作/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/关于工作/" itemprop="url">关于工作</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T22:51:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>大家认为成为一个更高级的工程师，拿更多的薪资是因为你的技术吗？大部分都不是，你拿多少钱不在于你技术的高低，而在于你能给公司带来多大的价值。</p>
-<p>Google 的网站可靠性团队发现，70% 的故障都是由系统变更引起的。更改服务、部署新代码、变更配置，这些都有可能引入新的缺陷或造成服务失效。</p>
-<p>回退代码并不是件坏事。你总不可能一边把有问题的代码留在生产环境里，一边想着到底发生了什么问题。所以，在必要的时候回退代码，越快越好。</p>
-<p>通过谷歌的Re: Work（这是一个谷歌分享对人员操作方面所进行的研究，想法和实践的网站），Rozovsky概述了成功团队的五个关键特征:</p>
-<ol>
-<li>可靠性<br>团队成员按时完成任务并达成预期目标。</li>
-<li>结构和清晰度<br>高效团队有着明确的目标，并在团队内分工明确。</li>
-<li>意义<br>这项工作对每个成员来说都有人生意义。</li>
-<li>影响<br>该团队认为他们的工作是有价值的，积极的并能给他人带来更大的利益。<br>最后一点更突出：<br>5.心理安全<br>我们都开过会，由于担心自己被别人看扁，我们不敢提出自己的问题或想法。 我知道了。 你一定感觉到你处于这样的一个环境中，你所做的一切都在显微镜下被观察着。</li>
-</ol>
-<p>但是试想一下一个不同的环境。 每个人都不用担心自己会承担风险，可以自由地表达自己的意见，并提出不会被评判的问题。 管理者提供一种保护文化，使员工可以畅所欲言。 这就是所谓的心理安全。<br>谷歌发现，觉得心理环境安全的团队成员不太可能离开，反而可能利用其多样性的力量，最终成为更成功的人。<br>打造完美团队的条件有时要比我们想像的要更加主观，但如果你能专注于这五个因素，你就增加了建立一支梦幻团队的可能性。 通过这项研究，谷歌使古希腊哲学家亚里士多德的结论再一次得到证实：“整体可以大于其各部分的总和”。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/关于创业-2/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/关于创业-2/" itemprop="url">关于创业</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T22:49:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂记/" itemprop="url" rel="index">
-                    <span itemprop="name">杂记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>我们常常存在幸存者偏差，忘记了通往顶峰的路上，堆满了白骨。<br>所有命运的馈赠，都要付出沉重的代价。</p>
-<p>经济下滑，创业维艰。但创新不死。 </p>
-<p>凡杀不死我的，必使我强大。<br>——弗里德里希·威廉·尼采</p>
-<p>致敬勇者<br>没有终局的成功，也没有致命的失败，重要的是继续前进的勇气。<br>——温斯顿·丘吉尔</p>
-<p>选择比勤奋更重要，做正确的事比正确地做事更重要。<br>创业公司最大的成本是决策成本，或者说因为决策不当，而造成的时间成本或机会成本。<br>所谓战略，就是为什么要做这件事情。所谓战术，就是怎么去做这件事情。<br>很多时候，懒惰于战略而勤于战术，其实是一个格局问题。<br>选择比努力更重要。战略就是如何选择，战术就是如何努力！要做好战略，必须勤于思考和分析！要做好战术，必须有很强的毅力和耐力！</p>
-<p>要么直接拒绝，要么坚定执行！</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/不要轻易的否定自己，也不要过高的估计自己。-1/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/不要轻易的否定自己，也不要过高的估计自己。-1/" itemprop="url">不要轻易的否定自己，也不要过高的估计自己。</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T22:43:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/随记/" itemprop="url" rel="index">
-                    <span itemprop="name">随记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>因资金短缺，马化腾曾经找到张朝阳，想以50万的价格卖掉QQ。而张朝阳不仅果断的拒绝了小马，还抛出了那句经典台词：你这东西我找几个大学生不超过3个月做的比你还好，根本就不值50万。后来腾讯市值超过3000亿美元。当年马云找上门来求马化腾投资阿里巴巴，但当时马化腾不懂也不太看好阿里巴巴，所以毅然决然的拒绝了马云，现在阿里巴巴的市值5000亿美元，位居全球第六。 </p>
-<p>回到问题本身，资金从哪里来？名下两家公司，曾遇到资金周转率严重问题，遇到难以过去的坑，选择继续融资。例如走不动产抵押，资金可以基于不动产情况变现60-70%问题不大；你可以继续寻找投资人，基于你的产品、试产占有的情况，与投资人谈。</p>
-<p>我的经历得到的经验是：不要轻易的否定自己，也不要过高的估计自己。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/产品中的二八定律-2/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/产品中的二八定律-2/" itemprop="url">产品中的二八定律</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T22:40:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/产品设计/" itemprop="url" rel="index">
-                    <span itemprop="name">产品设计</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>很多产品，往往都是20%的重点用户给该产品带来80%的价值。<br>找出20％的重点用户是关键。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/11/杂记三-1/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/11/杂记三-1/" itemprop="url">杂记三</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T09:35:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/管理心得/" itemprop="url" rel="index">
-                    <span itemprop="name">管理心得</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="凡事有交代，件件有着落，事事有回音。"><a href="#凡事有交代，件件有着落，事事有回音。" class="headerlink" title="凡事有交代，件件有着落，事事有回音。"></a>凡事有交代，件件有着落，事事有回音。</h3>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1674,7 +1656,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">30</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1685,7 +1667,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1696,7 +1678,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
