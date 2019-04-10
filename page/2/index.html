@@ -242,6 +242,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
 
       
         <li class="menu-item menu-item-search">
@@ -293,6 +303,686 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/03/05/敏捷开发入门教程（转）/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/05/敏捷开发入门教程（转）/" itemprop="url">敏捷开发入门教程（转）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-06T08:47:00+08:00">
+                2019-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>敏捷开发（agile development）是非常流行的软件开发方法。据统计，2018年90%的软件开发采用敏捷开发。<br>但是，到底什么是敏捷开发，能说清的人却不多。本文尝试用简洁易懂的语言，解释敏捷开发。<br><img src="/images/pasted-27.png" alt="upload successful"></p>
+<p>一、迭代开发<br><b>敏捷开发的核心是迭代开发（iterative development）。敏捷一定是采用迭代开发的方式。</b>  </p>
+<p>那么什么是”迭代开发”呢？迭代的英文是 iterative，直译为”重复”，迭代开发其实就是”重复开发”。  </p>
+<p>对于大型软件项目，传统的开发方式是采用一个大周期（比如一年）进行开发，整个过程就是一次”大开发”；迭代开发的方式则不一样，它将开发过程拆分成多个小周期，即一次”大开发”变成多次”小开发”，每次小开发都是同样的流程，所以看上去就好像重复在做同样的步骤。  </p>
+<p><img src="/images/pasted-31.png" alt="upload successful"></p>
+<p>举例来说，SpaceX 公司想造一个大推力火箭，将人类送到火星。但是，它不是一开始就造大火箭，而是先造一个最简陋的小火箭 Falcon 1。结果，第一次发射就爆炸了，直到第四次发射，才成功进入轨道。然后，开发了中型火箭 Falcon 9，九年中发射了70次。最后，才开发 Falcon 重型火箭。如果 SpaceX 不采用迭代开发，它可能直到现在还无法上天。  </p>
+<p><b>迭代开发将一个大任务，分解成多次连续的开发，本质就是逐步改进。</b>开发者先快速发布一个有效但不完美的最简版本，然后不断迭代。每一次迭代都包含规划、设计、编码、测试、评估五个步骤，不断改进产品，添加新功能。通过频繁的发布，以及跟踪对前一次迭代的反馈，最终接近较完善的产品形态。  </p>
+<p>二、增量开发<br>迭代开发只是要求将开发分成多个迭代，并没有回答一个重要的问题：怎么划分迭代，哪个任务在这个迭代，哪个任务在下个迭代？这时，一般采用”增量开发”（incremental development）划分迭代。  </p>
+<p><b>所谓”增量开发”，指的是软件的每个版本，都会新增一个用户可以感知的完整功能。也就是说，按照新增功能来划分迭代。</b><br><img src="/images/pasted-32.png" alt="upload successful"></p>
+<p>举例来说，房产公司开发一个10栋楼的小区。如果采用增量开发的模式，该公司第一个迭代就是交付一号楼，第二个迭代交付二号楼……每个迭代都是完成一栋完整的楼。而不是第一个迭代挖好10栋楼的地基，第二个迭代建好每栋楼的骨架，第三个迭代架设屋顶……  </p>
+<p><b>增量开发加上迭代开发，才算真正的敏捷开发。</b>  </p>
+<p>三、敏捷开发的好处<br>3.1 早期交付<br><b>敏捷开发的第一个好处，就是早期交付，从而大大降低成本。</b>  </p>
+<p>还是以上一节的房产公司为例，如果按照传统的”瀑布开发模式”，先挖10栋楼的地基、再盖骨架、然后架设屋顶，每个阶段都等到前一个阶段完成后开始，可能需要两年才能一次性交付10栋楼。也就是说，如果不考虑预售，该项目必须等到两年后才能回款。  </p>
+<p>敏捷开发是六个月后交付一号楼，后面每两个月交付一栋楼。因此，半年就能回款10%，后面每个月都会有现金流，资金压力就大大减轻了。  </p>
+<p>3.2 降低风险<br><b>敏捷开发的第二个好处是，及时了解市场需求，降低产品不适用的风险。</b>  </p>
+<p>请想一想，哪一种情况损失比较小：10栋楼都造好以后，才发现卖不出去，还是造好第一栋楼，就发现卖不出去，从而改进或停建后面9栋楼？</p>
+<p>对于软件项目来说，先有一个原型产品，了解市场的接受程度，往往是项目成功的关键。有一本书叫做《梦断代码》，副标题就是”20+个程序员，三年时间，4732个bug，100+万美元，最后失败的故事”，这就是没有采用敏捷开发的结果。相反的，Instagram 最初是一个地理位置打卡 App，后来发现用户不怎么在乎地理位置，更喜欢上传照片，就改做照片上传软件，结果成了独角兽。  </p>
+<p>由于敏捷开发可以不断试错，找出对业务最重要的功能，然后通过迭代，调整软件方向。相比传统方式，大大增加了产品成功的可能性。如果市场需求不确定，或者你对该领域不熟悉，那么敏捷开发几乎是唯一可行的应对方式。  </p>
+<p>四、如何进行每一次迭代<br>虽然敏捷开发将软件开发分成多个迭代，但是也要求，<b>每次迭代都是一个完整的软件开发周期，必须按照软件工程的方法论，进行正规的流程管理。</b><br><img src="/images/pasted-33.png" alt="upload successful"></p>
+<p>具体来说，每次迭代都必须依次完成以下五个步骤。</p>
+<blockquote>
+<p>需求分析（requirements analysis）<br>设计（design）<br>编码（coding）<br>测试（testing）<br>部署和评估（deployment / evaluation）  </p>
+</blockquote>
+<p>每个迭代大约持续2~6周。<font color="#f00">（dizzy：如果管理得当可以缩短到1周）</font></p>
+<p>五、敏捷开发的价值观<br>《敏捷软件开发宣言》里面提到四个价值观。  </p>
+<ul>
+<li>程序员的主观能动性，以及程序员之间的互动，优于既定流程和工具。  </li>
+<li>软件能够运行，优于详尽的文档。  </li>
+<li>跟客户的密切协作，优于合同和谈判。  </li>
+<li>能够响应变化，优于遵循计划。  </li>
+</ul>
+<p>六、十二条原则<br>该宣言还提出十二条敏捷开发的原则。  </p>
+<ol>
+<li>通过早期和持续交付有价值的软件，实现客户满意度。</li>
+<li>欢迎不断变化的需求，即使是在项目开发的后期。要善于利用需求变更，帮助客户获得竞争优势。</li>
+<li>不断交付可用的软件，周期通常是几周，越短越好。</li>
+<li>项目过程中，业务人员与开发人员必须在一起工作。</li>
+<li>项目必须围绕那些有内容动力的个人而建立，他们应该受到信任。</li>
+<li>面对面交谈是最好的沟通方式。</li>
+<li>可用性是衡量进度的主要指标。</li>
+<li>提倡可持续的开发，保持稳定的进展速度。</li>
+<li>不断关注技术是否优秀，设计是否良好。</li>
+<li>简单性至关重要，尽最大可能减少不必要的工作。</li>
+<li>最好的架构、要求和设计，来自团队内部自发的认识。</li>
+<li>团队要定期反思如何更有效，并相应地进行调整。</li>
+</ol>
+<p>转：<a href="http://www.ruanyifeng.com/blog/2019/03/agile-development.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2019/03/agile-development.html</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/03/05/常用Linux命令/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/05/常用Linux命令/" itemprop="url">常用Linux命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-06T03:51:00+08:00">
+                2019-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h3><ol>
+<li><p>按cpu利用率从大到小排列<br><code>ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort   -nr</code></p>
+</li>
+<li><p>查看进程 按内存从大到小排列<br><code>ps -e   -o &quot;%C   : %p : %z : %a&quot;|sort -k5 -nr</code>  </p>
+</li>
+<li><p>rpcbind服务相关操作  </p>
+<ul>
+<li><p>关闭服务：<br><code>service nfslock stop</code><br><code>chkconfig nfslock off</code>  </p>
+</li>
+<li><p>停止服务:<br><code>service rpcbind stop</code></p>
+</li>
+</ul>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/03/05/CentOS7服务相关操作/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/05/CentOS7服务相关操作/" itemprop="url">CentOS7服务相关操作</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-06T03:50:00+08:00">
+                2019-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="CentOS7-服务相关操作："><a href="#CentOS7-服务相关操作：" class="headerlink" title="CentOS7 服务相关操作："></a>CentOS7 服务相关操作：</h3><ul>
+<li>步骤1：查看crond.serivce服务的自启动状态<br>[root@localhost ~]# systemctl is-enabled crond.service<br>disabled<br>此时crond.serivce的自启动状态为disabled</li>
+</ul>
+<ul>
+<li><p>步骤2：开启crond.serivce服务自启动<br>[root@localhost ~]# systemctl enable crond.service<br>[root@localhost ~]# systemctl is-enabled crond.service<br>enabled</p>
+</li>
+<li><p>关闭服务自启动<br>systemctl disable crond.service</p>
+</li>
+<li><p>列出所有的启动文件：<br>systemctl list-unit-files</p>
+</li>
+</ul>
+<ul>
+<li>列出所有状态为enable的启动文件<br>systemctl list-unit-files | grep enable</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/03/05/找出是谁占用了带宽/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/05/找出是谁占用了带宽/" itemprop="url">Linux找出是谁占用了带宽</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-05T14:40:00+08:00">
+                2019-03-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="找出是谁占用了带宽"><a href="#找出是谁占用了带宽" class="headerlink" title="找出是谁占用了带宽"></a>找出是谁占用了带宽</h2><ol>
+<li>使用iftop查看带宽流量情况<br>安装iftop    <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  yum install iftop</span><br><span class="line">  ```  </span><br><span class="line">  iftop界面说明：  </span><br><span class="line">  界面上面显示的是类似刻度尺的刻度范围，为显示流量图形的长条作标尺用的。  </span><br><span class="line">  中间的&lt;= =&gt;这两个左右箭头，表示的是流量的方向。  </span><br><span class="line"></span><br><span class="line">  TX：发送流量  </span><br><span class="line">  RX：接收流量  </span><br><span class="line">  TOTAL：总流量  </span><br><span class="line">  Cumm：运行iftop到目前时间的总流量  </span><br><span class="line">  peak：流量峰值  </span><br><span class="line">  rates：分别表示过去 2s 10s 40s 的平均流量  </span><br><span class="line"></span><br><span class="line">2. 使用nethogs 查看具体是哪个进程在使用带宽 </span><br><span class="line">  ```shell</span><br><span class="line">  yum install nethogs</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/03/04/hexo博客解决不蒜子统计无法显示问题/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dizzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dizzy's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/04/hexo博客解决不蒜子统计无法显示问题/" itemprop="url">hexo博客解决不蒜子统计无法显示问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-05T04:53:00+08:00">
+                2019-03-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>hexo博客和NexT主题下不蒜子统计失效，无法显示。主要问题是不蒜子统计的域名过期了，而js的引用就会有问题。</p>
+</blockquote>
+<h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><p>首先需要先找到NexT下引用不蒜子统计的方法。文件路径为/theme/next/layout/_third-party/analytics/busuanzi-counter.swig文件。<br>打开后如图所示。<br><img src="/images/pasted-24.png" alt="upload successful"></p>
+<p>替换引用即可。替换为”<a href="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;。" target="_blank" rel="noopener">https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;。</a><br><img src="/images/pasted-25.png" alt="upload successful"></p>
+<h4 id="预览效果如下："><a href="#预览效果如下：" class="headerlink" title="预览效果如下："></a>预览效果如下：</h4><p><img src="/images/pasted-26.png" alt="upload successful"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -980,637 +1670,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/敏捷宣言/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/敏捷宣言/" itemprop="url">敏捷宣言</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T23:03:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="敏捷宣言："><a href="#敏捷宣言：" class="headerlink" title="敏捷宣言："></a>敏捷宣言：</h4><ol>
-<li>个体和互动高于流程和工具 </li>
-<li>可工作的软件高于详尽的文档 </li>
-<li>客户协作高于合同谈判</li>
-<li>响应变化高于遵循计划</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/名人名言/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/名人名言/" itemprop="url">名人名言</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T22:58:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>未来的胜利是极简的胜利。极简是对准客户的，留给自己是极其复杂的，而现在电子技术、芯片技术、计算技术等各种新技术已经能够把复杂问题简单化、智能化。 —— 任正非</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/什么是好的产品？/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/什么是好的产品？/" itemprop="url">什么是好的产品？</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T22:57:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="什么是好的产品？"><a href="#什么是好的产品？" class="headerlink" title="什么是好的产品？"></a>什么是好的产品？</h3><ol>
-<li>好的产品富有创意，必须是一个创新的东西；</li>
-<li>好的产品是有用的；</li>
-<li>好的产品是美的；</li>
-<li>好的产品是容易使用的；</li>
-<li>好的产品是很含蓄不招摇的；</li>
-<li>好的产品是诚实的；</li>
-<li>好的产品经久不衰，不会随着时间而过时；</li>
-<li>好的产品不会放过任何细节；</li>
-<li>好的产品是环保的，不浪费任何资源的；</li>
-<li>好的产品拥有尽可能少的设计，或者说少即是多。</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/程序员八荣八耻/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/程序员八荣八耻/" itemprop="url">程序员八荣八耻</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T22:57:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>程序员八荣八耻：</p>
-<ol>
-<li>以动手实践为荣 , 以只看不练为耻; </li>
-<li>以打印日志为荣 , 以单步跟踪为耻; </li>
-<li>以空格缩进为荣 , 以制表缩进为耻; </li>
-<li>以单元测试为荣 , 以人工测试为耻; </li>
-<li>以模块复用为荣 , 以复制粘贴为耻; </li>
-<li>以多态应用为荣 , 以分支判断为耻; </li>
-<li>以Pythonic为荣 , 以冗余拖沓为耻; </li>
-<li>以总结分享为荣 , 以跪求其解为耻。</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dizzychen.com/2019/02/12/关于产品经理/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="dizzy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dizzy's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/12/关于产品经理/" itemprop="url">关于产品经理</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T22:55:00+08:00">
-                2019-02-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>产品经理的天职，就是帮助公司或团队交付正确的产品给你的用户。<br>1、帮助、带领团队建立集体认同感；<br>2、理解公司的目标和发展愿景；<br>3、确保产品顺利交付上线；<br>4、确保是正确的产品；<br>5、深刻理解你的用户，做目标用户的代言人；</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1656,7 +1720,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">35</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1667,7 +1731,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1678,7 +1742,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1701,7 +1765,7 @@
                   <span class="links-of-author-item">
                     <a href="https://www.zhihu.com/people/dizzychen" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-zhihu"></i>知乎</a>
+                        <i class="fa fa-fw fa-spinner"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -1713,7 +1777,7 @@
                   <span class="links-of-author-item">
                     <a href="https://weibo.com/chy8219" target="_blank" title="新浪微博">
                       
-                        <i class="fa fa-fw fa-sina"></i>新浪微博</a>
+                        <i class="fa fa-fw fa-spinner"></i>新浪微博</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -1772,6 +1836,23 @@
 
 
 
+                <script>
+                var _mtac = {};
+                (function() {
+                    var mta = document.createElement("script");
+                    mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+                    mta.setAttribute("name", "MTAH5");
+                    mta.setAttribute("sid", "500677856");
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(mta, s);
+                })();
+                </script>
+            
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共15.4k字</span>
+</div>
 
         
 <div class="busuanzi-count">

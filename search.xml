@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Linux删除n天前文件]]></title>
+    <title><![CDATA[Django 相关]]></title>
+    <url>%2F2019%2F04%2F01%2FDjango-%E7%9B%B8%E5%85%B3%2F</url>
+    <content type="text"><![CDATA[操作数据库 访问已有数据库表在models的对应model中添加 Meta信息，如下： 123456789from django.db import modelsclass Article(models.Model): title = models.CharField(max_length=255) pub_date = models.DateTimeField('date published') class Meta: managed = False db_table = 'articles' django 数据库字段对应 123456789101112131415161718192021222324252627282930313233343536373839404142models.AutoField 自增列= int(11) 如果没有的话，默认会生成一个名称为 id 的列，如果要显示的自定义一个自增列，必须将给列设置为主键 primary_key=True。models.CharField 字符串字段 必须 max_length 参数models.BooleanField 布尔类型=tinyint(1) 不能为空，Blank=Truemodels.ComaSeparatedIntegerField 用逗号分割的数字=varchar 继承CharField，所以必须 max_lenght 参数models.DateField 日期类型 date 对于参数，auto_now =True则每次更新都会更新这个时间；auto_now_add 则只是第一次创建添加，之后的更新不再改变。models.DateTimeField 日期类型 datetime 同DateField的参数models.Decimal 十进制小数类型= decimal 必须指定整数位max_digits和小数位decimal_placesmodels.EmailField 字符串类型（正则表达式邮箱）=varchar 对字符串进行正则表达式models.FloatField 浮点类型= doublemodels.IntegerField 整形models.BigIntegerField 长整形 integer_field_ranges =&#123; 'SmallIntegerField':(-32768,32767), 'IntegerField':(-2147483648,2147483647), 'BigIntegerField':(-9223372036854775808,9223372036854775807), 'PositiveSmallIntegerField':(0,32767), 'PositiveIntegerField':(0,2147483647), &#125;models.IPAddressField 字符串类型（ip4正则表达式）models.GenericIPAddressField 字符串类型（ip4和ip6是可选的）参数protocol可以是：both、ipv4、ipv6验证时，会根据设置报错models.NullBooleanField 允许为空的布尔类型models.PositiveIntegerFiel 正Integermodels.PositiveSmallIntegerField 正smallIntegermodels.SlugField 减号、下划线、字母、数字models.SmallIntegerField 数字数据库中的字段有：tinyint、smallint、int、bigintmodels.TextField 字符串=longtextmodels.TimeField 时间 HH:MM[:ss[.uuuuuu]]models.URLField 字符串，地址正则表达式models.BinaryField 二进制models.ImageField图片models.FilePathField文件 对数据库表进行增删改查对数据进行增删改查 查 12345models.UserInfo.objects.all()models.UserInfo.objects.all().values('user') #只取user列models.UserInfo.objects.all().values_list('id','user') #取出id和user列，并生成一个列表models.UserInfo.objects.get(id=1)models.UserInfo.objects.get(user='yangmv') 增 123456789101112models.UserInfo.objects.create(user='yangmv',pwd='123456')或者obj = models.UserInfo(user='yangmv',pwd='123456')obj.save()或者dic = &#123;'user':'yangmv','pwd':'123456'&#125;models.UserInfo.objects.create(**dic)``` - 删``` pythonmodels.UserInfo.objects.filter(user='yangmv').delete() 改 12345models.UserInfo.objects.filter(user='yangmv').update(pwd='520')或者obj = models.UserInfo.objects.get(user='yangmv')obj.pwd = '520'obj.save()]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Rss Hub]]></title>
+    <url>%2F2019%2F03%2F27%2FRss-Hub%2F</url>
+    <content type="text"><![CDATA[RSSHub 是一个轻量、易于扩展的 RSS 生成器, 可以给任何奇奇怪怪的内容生成 RSS 订阅源 地址：https://docs.rsshub.app]]></content>
+      <categories>
+        <category>有用网站</category>
+      </categories>
+      <tags>
+        <tag>rss</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[高可用性指标]]></title>
+    <url>%2F2019%2F03%2F25%2F%E9%AB%98%E5%8F%AF%E7%94%A8%E6%80%A7%E6%8C%87%E6%A0%87%2F</url>
+    <content type="text"><![CDATA[￼ 系统可用性% 宕机时间/年 宕机时间/月 宕机时间/周 宕机时间/天 90%（1个9） 36.5天 72小时 16.8小时 2.4分钟 99%（2个9） 3.65天 7.2小时 1.68小时 14.4分钟 99.9%（3个9） 8.76小时 43.8分钟 10.1分钟 1.44分钟 99.99%（4个9） 52.56分钟 4.38分钟 1.01分钟 8.66秒 99.999%（5个9） 5.26分钟 25.9秒 6.05秒时 0.87秒 比如，99.999%的可用性，一年只能有5分半钟的服务不可用。就算是3个9的可用性，一个月的时间也只有40多分钟，看看那些设计和编码不认真的团队，把所有的期望寄托在人肉处理故障的运维团队，一个故障就能处理1个多小时甚至2-3个小时，连个自动化的工具都没有，还好意思在官网上声明自己的SLA是3个9或者5个9，这不是欺骗大人吗？]]></content>
+      <categories>
+        <category>运维技术</category>
+      </categories>
+      <tags>
+        <tag>运维技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[学习编程0-10年悟性]]></title>
+    <url>%2F2019%2F03%2F25%2F%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B0-10%E5%B9%B4%E6%82%9F%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>杂记</tag>
+        <tag>编程</tag>
+        <tag>程序员</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[浅谈面向对象编程中的SOLID设计原则]]></title>
+    <url>%2F2019%2F03%2F24%2F%E6%B5%85%E8%B0%88%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E4%B8%AD%E7%9A%84SOLID%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%2F</url>
+    <content type="text"><![CDATA[在软件的生命周期中，完成并不代表着结束，往往维护运营往往需要投入更多的成本，包括精力成本和时间成本。而一个遵循着好的开发规范以及拥有着良好设计原则的系统，往往可以节约大量的后期维护升级成本。说起设计，往往大家第一反应是设计模式，殊不知，二十几种设计其实都遵循着一些基本的设计原则。S.O.L.I.D，是事实证明的良好设计原则。 SOLID，每个字母分别对应于一个原则： S，SRP，Single Responsibility Principle O，OCP，Open/Closed Principle L，LSP，Liskov Substitution Principle I，ISP，Interface Segregation Principle D，DIP，Dependency Inversion PrincipleSRP，单一职责原则 SRP states that every class should have a single responsibility. There should never be more than one (design-related) reason for a class to change. 意为每个类应该有且仅有一个职责，只负责该职责相关的事情。在设计上，不应该有多于一个原因导致该类的变化。 这个原则相对简单，比如一家餐厅，服务生负责为客人点餐倒水，保洁负责收拾桌子，厨师负责料理，收银员负责收银，财务负责核账。一般而言，越大型的软件设计，职责划分就越细致。这样不会因为收银方式变更，导致厨师重新培训，在软件开发中则不用因为一个类或者模块变更导致整个软件都要进行重新测试。 OCP，开闭原则OCP states that objects or entities should be open for extension, but closed for modification. 意为软件中的对象或实体，比如类、模块、函数等，要尽量允许扩展而避免更改。按照这个原则，当我们需要为某个模块/类添加某个行为时，应该是通过增加一个类/方法而不是修改既有的某个类/方法达成目标。 这个原则，在我们的软件开发过程中，应该是很常见的，尤其是在使用第三方库的时候，会发现，一个优秀的第三方库，有一个更优的算法时，往往会增加一个新的类/方法去实现该算法并建议使用它，而不是直接修改旧有的算法类/方法。如果不遵循该原则，直接大刀阔斧地修改了某对象的行为，而恰巧该对象被系统的其他部分依赖怎么办？那岂不是要更改每一处对该对象行为的引用的地方，再检查逻辑是否因此变化，还得再做一堆的测试，凭空增加了工作量。 LSP，里氏替换原则LSP states that objects in a program should be replaceable with instances of their subtypes without altering the correctness of the program. 该原则是说，在程序中，对象应该都是可以用它们的子类型来替换，而不影响程序的正确性，即不出异常不报错。 理论上来讲，如果父类能实现的逻辑，子类同样也能实现，那么它们才具备父子关系，否则请移除其父子关系。例如，有这样一句话『我用枪击杀了敌人』，其中的『枪』，我可以换成『手枪』、『狙击枪』，这样没问题，所以在这个系统中，枪和手枪、狙击枪之间可以有继承关系，如果我说『我用道具枪击杀了敌人』，因为道具枪不能杀人，显然这句话就出现了明显的逻辑漏洞，据此，在这句话所构成的系统中，水枪不能和枪成为父子类型的关系。当然，在不同的系统中，父子关系是不一定的，所以里氏替换原则，也只需要在特定系统中遵循即可。例如，『我听到了一声枪响』，在这个系统中，即使是演电影的道具枪，也可以有枪响，所以它就和枪具备了可替换性。 ISP，接口隔离原则ISP states that many client-specific interfaces are better than one general-purpose interface. 意为许多客户特定的接口，要优于一个大而全的通用目的的接口。分拆合理的接口，能避免任意的实现，都需要实现一大堆根本不需要但又不得不去实现的方法。 这么理解，现在有一个系统，想要描述自然界各类动物的移动行为，我们看下面两种方式哪个更好一些。方式一，只定义一个 Moveable ，描述动物有飞、走、游三种不同的移动方式：12345public interface Moveable &#123; void fly(); void walk(); void swim();&#125; 方式二，定义飞会飞的 Flyable ，会走的 Walkable ，会游的 Swimmable 123456789public interface Flyable &#123; void fly();&#125;public interface Walkable &#123; void walk();&#125;public interface Swimmable &#123; void swim();&#125; OK，我现在想描述具体的鲸鱼的移动方式，如果按照方式一，我可能需要些一个 Whale 类，去实现其中的所有三个方法，而事实上，fly() 和 walk() 方法，与鲸毫无关系。而第二种方式，我知道鲸是游的，那么只需要去实现 Swimmable 接口，并实现其中的 swim() 方法即可。同理，当描述麻雀、大象时，只需要分别实现对应的 Flyable 和 Walkable， 而对于青蛙这种既会游又会走的，只需要实现 Swimmable 和 Walkable 两个接口即可完美描述其移动方式。 值得说明的一点是，该原则中的接口并不特指 Java 中的 interface ，而是类似于 API 中的 I一样的泛义的接口，抽象类甚至具体实现类都可能包含在这个概念中。 DIP，依赖倒置原则DIP states that the high level module must not depend on low level module, but they should depend on abstractions. 即高层模块不能依赖于具体的底层模块，而是应该依赖于底层模块的抽象。换句话说，要尽量使用抽象最小化对象之间的依赖。 例如现在有一个 App 类，这个类可能有发邮件（Email）、发短信（SMS）、数据入库（Database）等操作，其中我们认为 Email/SMS/Database 都是具体的特定类，与其让 App 类去依赖于这三个具体的类，DIP 指导我们对这三个具象类抽象出一个 Service 类。如此一来，App 只依赖于一个抽象类 Service。这样的好处显而易见，我们不仅能随时替换 Service 的功能（想发邮件发邮件、想发短信发短信、想数据入库就入库），甚至还能扩展功能，比如添加日志，审计功能。 遵循良好的设计原则，有利于我们平常在开发中写出更可维护的代码，便于团队协作也有利于后来者。道理上讲，设计模式、设计原则等等，也理应成为OOP程序员之间的常用术语，这样一来，才能显得更具专业性。]]></content>
+      <categories>
+        <category>架构设计</category>
+      </categories>
+      <tags>
+        <tag>设计原则</tag>
+        <tag>设计模式</tag>
+        <tag>OOP</tag>
+        <tag>SOLID</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux文件清理]]></title>
     <url>%2F2019%2F03%2F24%2F%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4n%E5%A4%A9%E5%89%8D%E6%96%87%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[删除文件命令：find 对应目录 -mtime +天数 -name “文件名” -exec rm -rf {} \; 实例命令：1find /opt/soft/log/ -mtime +30 -name &quot;*.log&quot; -exec rm -rf &#123;&#125; \; 说明： 将/opt/soft/log/目录下所有30天前带”.log”的文件删除。具体参数说明如下：find：linux的查找命令，用户查找指定条件的文件；/opt/soft/log/：想要进行清理的任意目录；-mtime：标准语句写法；+30：查找30天前的文件，这里用数字代表天数；“.log”：希望查找的数据类型，”.jpg”表示查找扩展名为jpg的所有文件，”*”表示查找所有文件，这个可以灵活运用，举一反三；-exec：固定写法；rm -rf：强制删除文件，包括目录；{} \; ：固定写法，一对大括号+空格++;]]></content>
+    <content type="text"><![CDATA[删除n天前文件：find 对应目录 -mtime +天数 -name “文件名” -exec rm -rf {} \; 实例命令：1find /opt/soft/log/ -mtime +30 -name &quot;*.log&quot; -exec rm -rf &#123;&#125; \; 说明： 将/opt/soft/log/目录下所有30天前带”.log”的文件删除。具体参数说明如下：find：linux的查找命令，用户查找指定条件的文件；/opt/soft/log/：想要进行清理的任意目录；-mtime：标准语句写法；+30：查找30天前的文件，这里用数字代表天数；“.log”：希望查找的数据类型，”.jpg”表示查找扩展名为jpg的所有文件，”*”表示查找所有文件，这个可以灵活运用，举一反三；-exec：固定写法；rm -rf：强制删除文件，包括目录；{} \; ：固定写法，一对大括号+空格++; 删除大小为0的文件1find /opt/soft/log/ -name &quot;*&quot; -type f -size 0c -exec rm -rf &#123;&#125; \;]]></content>
       <categories>
         <category>运维技术</category>
       </categories>
@@ -152,19 +206,19 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[什么是好的产品？]]></title>
-    <url>%2F2019%2F02%2F12%2F%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%EF%BC%9F%2F</url>
-    <content type="text"><![CDATA[什么是好的产品？ 好的产品富有创意，必须是一个创新的东西； 好的产品是有用的； 好的产品是美的； 好的产品是容易使用的； 好的产品是很含蓄不招摇的； 好的产品是诚实的； 好的产品经久不衰，不会随着时间而过时； 好的产品不会放过任何细节； 好的产品是环保的，不浪费任何资源的； 好的产品拥有尽可能少的设计，或者说少即是多。]]></content>
-      <tags>
-        <tag>产品</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[程序员八荣八耻]]></title>
     <url>%2F2019%2F02%2F12%2F%E7%A8%8B%E5%BA%8F%E5%91%98%E5%85%AB%E8%8D%A3%E5%85%AB%E8%80%BB%2F</url>
     <content type="text"><![CDATA[程序员八荣八耻： 以动手实践为荣 , 以只看不练为耻; 以打印日志为荣 , 以单步跟踪为耻; 以空格缩进为荣 , 以制表缩进为耻; 以单元测试为荣 , 以人工测试为耻; 以模块复用为荣 , 以复制粘贴为耻; 以多态应用为荣 , 以分支判断为耻; 以Pythonic为荣 , 以冗余拖沓为耻; 以总结分享为荣 , 以跪求其解为耻。]]></content>
       <tags>
         <tag>技术管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[什么是好的产品？]]></title>
+    <url>%2F2019%2F02%2F12%2F%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%EF%BC%9F%2F</url>
+    <content type="text"><![CDATA[什么是好的产品？ 好的产品富有创意，必须是一个创新的东西； 好的产品是有用的； 好的产品是美的； 好的产品是容易使用的； 好的产品是很含蓄不招摇的； 好的产品是诚实的； 好的产品经久不衰，不会随着时间而过时； 好的产品不会放过任何细节； 好的产品是环保的，不浪费任何资源的； 好的产品拥有尽可能少的设计，或者说少即是多。]]></content>
+      <tags>
+        <tag>产品</tag>
       </tags>
   </entry>
   <entry>
@@ -181,17 +235,6 @@
     <content type="text"><![CDATA[大家认为成为一个更高级的工程师，拿更多的薪资是因为你的技术吗？大部分都不是，你拿多少钱不在于你技术的高低，而在于你能给公司带来多大的价值。 Google 的网站可靠性团队发现，70% 的故障都是由系统变更引起的。更改服务、部署新代码、变更配置，这些都有可能引入新的缺陷或造成服务失效。 回退代码并不是件坏事。你总不可能一边把有问题的代码留在生产环境里，一边想着到底发生了什么问题。所以，在必要的时候回退代码，越快越好。 通过谷歌的Re: Work（这是一个谷歌分享对人员操作方面所进行的研究，想法和实践的网站），Rozovsky概述了成功团队的五个关键特征: 可靠性团队成员按时完成任务并达成预期目标。 结构和清晰度高效团队有着明确的目标，并在团队内分工明确。 意义这项工作对每个成员来说都有人生意义。 影响该团队认为他们的工作是有价值的，积极的并能给他人带来更大的利益。最后一点更突出：5.心理安全我们都开过会，由于担心自己被别人看扁，我们不敢提出自己的问题或想法。 我知道了。 你一定感觉到你处于这样的一个环境中，你所做的一切都在显微镜下被观察着。 但是试想一下一个不同的环境。 每个人都不用担心自己会承担风险，可以自由地表达自己的意见，并提出不会被评判的问题。 管理者提供一种保护文化，使员工可以畅所欲言。 这就是所谓的心理安全。谷歌发现，觉得心理环境安全的团队成员不太可能离开，反而可能利用其多样性的力量，最终成为更成功的人。打造完美团队的条件有时要比我们想像的要更加主观，但如果你能专注于这五个因素，你就增加了建立一支梦幻团队的可能性。 通过这项研究，谷歌使古希腊哲学家亚里士多德的结论再一次得到证实：“整体可以大于其各部分的总和”。]]></content>
       <tags>
         <tag>随记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[关于创业]]></title>
-    <url>%2F2019%2F02%2F12%2F%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A-2%2F</url>
-    <content type="text"><![CDATA[我们常常存在幸存者偏差，忘记了通往顶峰的路上，堆满了白骨。所有命运的馈赠，都要付出沉重的代价。 经济下滑，创业维艰。但创新不死。 凡杀不死我的，必使我强大。——弗里德里希·威廉·尼采 致敬勇者没有终局的成功，也没有致命的失败，重要的是继续前进的勇气。——温斯顿·丘吉尔 选择比勤奋更重要，做正确的事比正确地做事更重要。创业公司最大的成本是决策成本，或者说因为决策不当，而造成的时间成本或机会成本。所谓战略，就是为什么要做这件事情。所谓战术，就是怎么去做这件事情。很多时候，懒惰于战略而勤于战术，其实是一个格局问题。选择比努力更重要。战略就是如何选择，战术就是如何努力！要做好战略，必须勤于思考和分析！要做好战术，必须有很强的毅力和耐力！ 要么直接拒绝，要么坚定执行！]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>创业</tag>
       </tags>
   </entry>
   <entry>
@@ -214,6 +257,18 @@
       </categories>
       <tags>
         <tag>产品</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[关于创业]]></title>
+    <url>%2F2019%2F02%2F11%2F%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A-2%2F</url>
+    <content type="text"><![CDATA[我们常常存在幸存者偏差，忘记了通往顶峰的路上，堆满了白骨。所有命运的馈赠，都要付出沉重的代价。 经济下滑，创业维艰。但创新不死。 凡杀不死我的，必使我强大。——弗里德里希·威廉·尼采 致敬勇者没有终局的成功，也没有致命的失败，重要的是继续前进的勇气。——温斯顿·丘吉尔 选择比勤奋更重要，做正确的事比正确地做事更重要。创业公司最大的成本是决策成本，或者说因为决策不当，而造成的时间成本或机会成本。所谓战略，就是为什么要做这件事情。所谓战术，就是怎么去做这件事情。很多时候，懒惰于战略而勤于战术，其实是一个格局问题。选择比努力更重要。战略就是如何选择，战术就是如何努力！要做好战略，必须勤于思考和分析！要做好战术，必须有很强的毅力和耐力！ 要么直接拒绝，要么坚定执行！]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>创业</tag>
+        <tag>随记</tag>
       </tags>
   </entry>
   <entry>
