@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dizzychen.com/"/>
-  <updated>2019-04-11T03:18:40.806Z</updated>
+  <updated>2019-04-11T07:06:27.412Z</updated>
   <id>http://dizzychen.com/</id>
   
   <author>
@@ -21,17 +21,25 @@
     <link href="http://dizzychen.com/2019/04/10/%E5%A6%82%E4%BD%95%E7%94%BB%E5%87%BA%E4%B8%80%E5%BC%A0%E5%90%88%E6%A0%BC%E7%9A%84%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE%EF%BC%9F%EF%BC%88%E8%BD%AC%EF%BC%89/"/>
     <id>http://dizzychen.com/2019/04/10/如何画出一张合格的技术架构图？（转）/</id>
     <published>2019-04-10T14:51:00.000Z</published>
-    <updated>2019-04-11T03:18:40.806Z</updated>
+    <updated>2019-04-11T07:06:27.412Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/images/pasted-37.png&quot; alt=&quot;upload
-        
-      
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-37.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;导读：技术传播的价值，不仅仅体现在通过商业化产品和开源项目来缩短我们构建应用的路径，加速业务的上线速率，也体现在优秀工程师在工作效率提升、产品性能优化和用户体验改善等经验方面的分享，以提高我们的专业能力。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;接下来，阿里巴巴技术专家三画，将分享自己和团队在画好架构图方面的理念和经验，希望对你有所帮助。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;当我们想用一张或几张图来描述我们的系统时，是不是经常遇到以下情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对着画布无从下手、删了又来？&lt;/li&gt;
+&lt;li&gt;如何用一张图描述我的系统，并且让产品、运营、开发都能看明白？&lt;/li&gt;
+&lt;li&gt;画了一半的图还不清楚受众是谁？&lt;/li&gt;
+&lt;li&gt;画出来的图到底是产品图功能图还是技术图又或是大杂烩？&lt;/li&gt;
+&lt;li&gt;图上的框框有点少是不是要找点儿框框加进来？&lt;/li&gt;
+&lt;li&gt;布局怎么画都不满意……
     
     </summary>
     
@@ -388,7 +396,7 @@
     <link href="http://dizzychen.com/2019/03/05/%E5%B8%B8%E7%94%A8Linux%E5%91%BD%E4%BB%A4/"/>
     <id>http://dizzychen.com/2019/03/05/常用Linux命令/</id>
     <published>2019-03-05T19:51:00.000Z</published>
-    <updated>2019-03-06T09:13:03.557Z</updated>
+    <updated>2019-04-11T06:34:23.667Z</updated>
     
     <summary type="html">
     
