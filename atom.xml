@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dizzychen.com/"/>
-  <updated>2019-04-02T07:28:39.066Z</updated>
+  <updated>2019-04-11T03:18:40.806Z</updated>
   <id>http://dizzychen.com/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何画出一张合格的技术架构图？（转）</title>
+    <link href="http://dizzychen.com/2019/04/10/%E5%A6%82%E4%BD%95%E7%94%BB%E5%87%BA%E4%B8%80%E5%BC%A0%E5%90%88%E6%A0%BC%E7%9A%84%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE%EF%BC%9F%EF%BC%88%E8%BD%AC%EF%BC%89/"/>
+    <id>http://dizzychen.com/2019/04/10/如何画出一张合格的技术架构图？（转）/</id>
+    <published>2019-04-10T14:51:00.000Z</published>
+    <updated>2019-04-11T03:18:40.806Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-37.png&quot; alt=&quot;upload
+        
+      
+    
+    </summary>
+    
+      <category term="架构设计" scheme="http://dizzychen.com/categories/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="软件架构" scheme="http://dizzychen.com/tags/%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac 自动定时执行任务</title>
+    <link href="http://dizzychen.com/2019/04/09/mac-%E8%87%AA%E5%8A%A8%E5%AE%9A%E6%97%B6%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1/"/>
+    <id>http://dizzychen.com/2019/04/09/mac-自动定时执行任务/</id>
+    <published>2019-04-09T20:17:00.000Z</published>
+    <updated>2019-04-10T08:24:19.888Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;launchctl&lt;/p&gt;
+&lt;p&gt;launchctl:
+        
+      
+    
+    </summary>
+    
+      <category term="mac" scheme="http://dizzychen.com/categories/mac/"/>
+    
+    
+      <category term="mac" scheme="http://dizzychen.com/tags/mac/"/>
+    
+  </entry>
   
   <entry>
     <title>Django 相关</title>
@@ -510,63 +563,6 @@
     
     
       <category term="大数据平台" scheme="http://dizzychen.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搬瓦工VPS IP被封处理方法</title>
-    <link href="http://dizzychen.com/2019/02/15/%E6%90%AC%E7%93%A6%E5%B7%A5VPS-IP%E8%A2%AB%E5%B0%81%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/"/>
-    <id>http://dizzychen.com/2019/02/15/搬瓦工VPS-IP被封处理方法/</id>
-    <published>2019-02-15T13:47:00.000Z</published>
-    <updated>2019-02-16T02:57:46.010Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;处理步骤如下&quot;&gt;&lt;a href=&quot;#处理步骤如下&quot; class=&quot;headerlink&quot; title=&quot;处理步骤如下:&quot;&gt;&lt;/a&gt;处理步骤如下:&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;检测IP是否被封，官方检测URL：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="翻墙" scheme="http://dizzychen.com/tags/%E7%BF%BB%E5%A2%99/"/>
-    
-      <category term="搬瓦工" scheme="http://dizzychen.com/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/"/>
-    
-      <category term="VPS" scheme="http://dizzychen.com/tags/VPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>找出谁占用了带宽</title>
-    <link href="http://dizzychen.com/2019/02/13/%E6%89%BE%E5%87%BA%E8%B0%81%E5%8D%A0%E7%94%A8%E4%BA%86%E5%B8%A6%E5%AE%BD/"/>
-    <id>http://dizzychen.com/2019/02/13/找出谁占用了带宽/</id>
-    <published>2019-02-13T17:27:00.000Z</published>
-    <updated>2019-02-14T06:27:45.546Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;找出是谁占用了带宽&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;使用iftop查看带宽流量情况&lt;br&gt;安装iftop    &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="http://dizzychen.com/tags/linux/"/>
-    
-      <category term="运维" scheme="http://dizzychen.com/tags/%E8%BF%90%E7%BB%B4/"/>
     
   </entry>
   
